@@ -1,0 +1,49 @@
+.central{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+.network{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.complete{
+    font-size: 20px;
+    text-align: center;
+}
+
+@media(max-width: 768px){
+    .network{
+        font-size: 35px;
+    }
+   
+    .complete{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 425px){
+    .network{
+        font-size: 25px;
+    }
+   
+    .complete{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 375px){
+    .network{
+        font-size: 20px;
+    }
+   
+    .complete{
+        font-size: 12px;
+    }
+}

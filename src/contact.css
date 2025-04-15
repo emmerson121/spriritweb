@@ -130,7 +130,7 @@ body{
 .icon2{
     width: 100%;
     height: 100%;
-    color: #008EA8;
+    color: #000;
     /* background-color: blue; */
 }
 
@@ -348,15 +348,19 @@ body{
 }
 
 /*Referrals section*/
+.main{
+    position: relative;
+}
+
 .totaldash{
     display: flex;
     width: 100%;
-    gap: 20px;
+    gap: 45px;
 }
 
 .dashboard{
-    width: 25%;
-    height: auto;
+    /* width: 23%; */
+    height: 930px;
     background-color: #fff;
     color: #000;
     
@@ -372,8 +376,8 @@ body{
 .line1{
     border: 0.2px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    margin-top: 30px;
-    width: 256px;
+    margin-top: 0px;
+    width: 311px;
 }
 
 .list{
@@ -388,27 +392,368 @@ body{
     display: flex;
     margin-top: 30px;
     gap: 10px;
+    text-decoration: none;
+    color: #000;
 }
 
 .list2{
     gap: 20px;
 }
 
+.list3{
+    display: flex;
+    margin-top: 30px;
+    gap: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
 .icon4{
-    width: 25px;
-    height: 15px;
+    width: 18px;
+    height: 17px;
 }
 
 .icon5{
-    width: 20px;
+    width: 25px;
     height: 12px;
+    color: #000;
 }
 
 .line2{
     border: 0.2px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     margin-top: 5px;
-    width: 256px;
+    width: 311px;
+}
+
+.support{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.support1{
+    font-size: 13px;
+}
+
+.line3{
+    border: 0.2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 445px;
+    width: 311px;
+}
+
+.profile{
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    padding: 20px;
+}
+
+.jd{
+    width: 48px;
+    height: 45px;
+    background-color: #e3e2e2;
+    color: #707070;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 9px;
+}
+
+.john1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.john2{
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.refer{
+    width: 70%;
+}
+
+.referr{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.border1{
+    background-color: #fff;
+    width: 950px;
+    height: 130px;
+    margin-top: 40px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.refcode{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.refcode1{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.refcode2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.refcode3{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.icon6{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.refcode4{
+    width: 112px;
+    height: 40px;
+    background-color: #008EA8;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    padding: 20px;
+}
+
+.referral{
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.totalref{
+    width: 207px;
+    height: 110px;
+    background-color: #fff;
+    padding: 23px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+.refA{
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.ref1{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ref3{
+    font-size: 22px;
+    font-weight: bold;
+    color: #008EA8;
+}
+
+.recent{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.viewall{
+    color: #008EA8;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.table{
+    width: 930px;
+}
+
+.table1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.data{
+    font-size: 12px;
+}
+
+.table2{
+    /* background-color: #fff; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+    /* border-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: -15px;
+    /* width: 950px; */
+    /* height: 250px; */
+}
+
+.table3{
+    width: 950px;
+    height: 75px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 123px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.name{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.airtime{
+    font-size: 12px;
+}
+
+.amount{
+    font-size: 15px;
+    font-weight: bold;
+    right: 10px;
+}
+
+.date{
+    font-size: 12px;
+}
+
+.completed{
+    font-size: 12px;
+    width: 85px;
+    height: 20px;
+    background-color: #bae774;
+    color: #033803;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.process{
+    font-size: 12px;
+    width: 85px;
+    height: 20px;
+    background-color: yellow;
+    color: brown;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+/*Earning section*/
+.earn{
+    width: 70%;
+}
+
+.mainearn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.earns{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.withdraw{
+    width: 160px;
+    height: 45px;
+    background-color: #008EA8;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.time1{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    /* align-items: center; */
+}
+
+.alltime{
+    background-color: #fff;
+    border-style: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 15px;
+    height: 40px;
+    padding: 0 16px;
+    width: 120px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tableA{
+    width: 990px;
+}
+
+.tableB{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 55px; */
+    margin-bottom: -5px;
+    padding: 20px;
+}
+
+.table4{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 0px;
+}
+
+.table5{
+    width: 950px;
+    height: 75px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 

@@ -1,58 +1,30 @@
 import React from 'react';
 import './contact.css';
 import refer from './img/refer.png';
+import wallet from './img/wallet.png';
+import help from './img/help.png';
+import Dashboard from './dashboard';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faHouse } from "@fortawesome/fontawesome-free-solid";
-import { faHouse, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faPhone, faShareNodes } from '@fortawesome/free-solid-svg-icons'
 
 const Referrals = () =>{
 
     return(
-        <div>
+        <div className='main'>
             <div className='totaldash'>
-            <div className='dashboard'>
-                <div className='dash'>
-                    <div>Dashboard</div>
-                </div>
-
-                <div className='line1'></div>
-                <ul className='list'>
-                    <li className='list1'>
-                        <div className='icon4'><FontAwesomeIcon className='icon2' icon={faHouse} /></div>
-                        <div>Overview</div>
-                        </li>
-
-                    <li className='list1'>
-                        <div className='icon4'><FontAwesomeIcon className='icon2' icon={faPhone} /></div>
-                        <div>Virtual Numbers</div>
-                        </li>
-
-                    <li className='list1'>
-                        <div className='icon5'><svg className='iocn2' width="32" height="32" viewBox="0 0 32 32" fill="none">
-<path d="M28 20C28 20.7072 27.719 21.3855 27.219 21.8856C26.7189 22.3857 26.0406 22.6667 25.3333 22.6667H9.33333L4 28V6.66667C4 5.95942 4.28095 5.28115 4.78105 4.78105C5.28115 4.28095 5.95942 4 6.66667 4H25.3333C26.0406 4 26.7189 4.28095 27.219 4.78105C27.719 5.28115 28 5.95942 28 6.66667V20Z" stroke="#008EA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></div>
-                        <div>Messages</div>
-                        </li>
-                    <li className='list1'>
-                        <div className='icon4'><img className='icon2' src={refer} alt='' /></div>
-                        <div>Referrals</div>
-                        </li>
-                    <li className='list1'>Earnings</li>
-                </ul>
-
-                <div className='line2'></div>
-
-                <div>Help & Support</div>
-            </div>
+           <Dashboard />
 
             <div className='refer'>
-                <div>Referrals</div>
+                <div className='referr'>Referrals</div>
 
                 <div className='border1'>
-                    <div>Your Referral Code</div>
-                    <div>
-                        <div>SPIRITHQ-JD-2232</div>
-                        <div>
+                    <div className='refcode'>Your Referral Code</div>
+                    
+                    <div className='refcode2'>
+                        <div className='refcode1'>SPIRITHQ-JD-2232</div>
+                        
+                        <div className='refcode3'>
                             <div><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_713_2677)">
 <path d="M14.1146 5.33301H7.44796C6.71158 5.33301 6.11462 5.92996 6.11462 6.66634V13.333C6.11462 14.0694 6.71158 14.6663 7.44796 14.6663H14.1146C14.851 14.6663 15.448 14.0694 15.448 13.333V6.66634C15.448 5.92996 14.851 5.33301 14.1146 5.33301Z" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -65,41 +37,80 @@ const Referrals = () =>{
 </defs>
 </svg>
 </div>
-                            <div>
-                            <div><svg width="8" height="5" viewBox="0 0 8 5" fill="none">
-<path d="M6.0546 1.33984L1.50793 3.99318" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</div>
+                            <div className='refcode4'>
+                            <div className='icon4'><FontAwesomeIcon className='icon6' icon={faShareNodes} /></div>
                             <div>Share</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        <div>Your Referrals</div>
-                        <div>12</div>
+                <div className='referral'>
+                    <div className='totalref'>
+                        <div className='refA'>Your Referrals</div>
+                        <div className='ref1'>12</div>
                     </div>
 
-                    <div>
-                        <div>Your Referrals</div>
-                        <div>12</div>
+                    <div className='totalref'>
+                        <div className='refA'>Active Referrals</div>
+                        <div className='ref1'>8</div>
                     </div>
 
-                    <div>
-                        <div>Your Referrals</div>
-                        <div>12</div>
+                    <div className='totalref'>
+                        <div className='refA'>Total Earnings</div>
+                        <div className='ref3'>#40,689</div>
                     </div>
 
-                    <div>
-                        <div>Your Referrals</div>
-                        <div>12</div>
+                    <div className='totalref'>
+                        <div className='refA'>Pending Commissions</div>
+                        <div className='ref1'>#8,689</div>
                     </div>
 
-                    <div>Help & Support</div>
+                </div>
+
+                <div className='view'>
+                <div className='recent'>Recent Referrals</div>
+                <div><a className='viewall' href="">View all</a></div>
+                </div>
+
+                <div className='table'>
+                    <div className='table1'>
+                        <div className='data'>Name</div>
+                        <div className='data'>Service</div>
+                        <div className='data'>Amount</div>
+                        <div className='data'>Date</div>
+                        <div className='data'>Status</div>
+                    </div>
+                </div>
+
+                <div className='table2'>
+                    <div className='table3'>
+                        <div className='name'>Christine Brooks</div>
+                        <div className='airtime'>Airtime</div>
+                        <div className='amount'>#50.00</div>
+                        <div className='date'>14th Feb, 2024</div>
+                        <div className='completed'>completed</div> 
+                    </div>
+
+                    <div className='table3'>
+                        <div className='name'>Christine Brooks</div>
+                        <div className='airtime'>Spy App</div>
+                        <div className='amount'>#1,530.00</div>
+                        <div className='date'>14th Feb, 2024</div>
+                        <div className='process'>processing</div> 
+                    </div>
+
+                    <div className='table3'>
+                        <div className='name'>Christine Brooks</div>
+                        <div className='airtime'>Movies App</div>
+                        <div className='amount'>#3,650.00</div>
+                        <div className='date'>14th Feb, 2024</div>
+                        <div className='completed'>completed</div> 
+                    </div>
                 </div>
             </div>
+
+            
             </div>
         </div>
     )

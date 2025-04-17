@@ -5,7 +5,7 @@ import wallet from './img/wallet.png';
 import help from './img/help.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faHouse } from "@fortawesome/fontawesome-free-solid";
-import { faHouse, faPhone, faShareNodes } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faPhone, faShareNodes } from '@fortawesome/free-solid-svg-icons';
 
 const Dashboard = () =>{
 

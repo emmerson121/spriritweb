@@ -1,8 +1,10 @@
 import React from "react";
 import './contact.css';
+import home from './img/home.png';
 import refer from './img/refer.png';
 import wallet from './img/wallet.png';
 import help from './img/help.png';
+import phone from './img/phone.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faHouse } from "@fortawesome/fontawesome-free-solid";
 import { faHouse, faPhone, faShareNodes } from '@fortawesome/free-solid-svg-icons';
@@ -20,12 +22,12 @@ const Dashboard = () =>{
                             <div className='line1'></div>
                             <ul className='list'>
                                 <li><a className="list1" href="">
-                                    <div className='icon4'><FontAwesomeIcon className='icon2' icon={faHouse} /></div>
+                                    <div className='icon4'><img className='icon2' src={home} /></div>
                                     <div>Overview</div></a>
                                     </li>
             
                                 <li><a className="list1" href="">
-                                    <div className='icon4'><a href=""></a><FontAwesomeIcon className='icon2' icon={faPhone} /></div>
+                                    <div className='icon4'><img className='icon2' src={phone} /></div>
                                     <div>Virtual Numbers</div></a>
                                     </li>
             

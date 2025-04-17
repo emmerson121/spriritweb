@@ -360,7 +360,7 @@ body{
 
 .dashboard{
     /* width: 23%; */
-    height: 930px;
+    height: 945px;
     background-color: #fff;
     color: #000;
     
@@ -390,6 +390,7 @@ body{
 
 .list1{
     display: flex;
+    align-items: center;
     margin-top: 30px;
     gap: 10px;
     text-decoration: none;
@@ -428,6 +429,7 @@ body{
 
 .support{
     display: flex;
+    align-items: center;
     gap: 10px;
     margin-top: 40px;
     margin-left: 20px;
@@ -450,7 +452,7 @@ body{
     display: flex;
     justify-content: left;
     gap: 15px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .jd{
@@ -660,6 +662,7 @@ body{
     color: #033803;
     border-radius: 20px;
     padding: 3px;
+    text-align: center;
 }
 
 .process{
@@ -670,6 +673,7 @@ body{
     color: brown;
     border-radius: 20px;
     padding: 3px;
+    text-align: center;
 }
 
 /*Earning section*/
@@ -807,8 +811,8 @@ body{
 
 .usa{
     display: flex;
-    justify-content: last baseline;
-    gap: 5px;
+    /* justify-content: last baseline; */
+    gap: 15px;
     align-items: center;
 }
 
@@ -892,8 +896,8 @@ body{
 .sms{
     font-size: 18px;
     font-weight: bold;
-    margin-top: -10px;
-    margin-bottom: 15px
+    margin-top: -13px;
+    margin-bottom: 10px
 }
 
 .calendar1{
@@ -902,9 +906,21 @@ body{
 }
 
 /*Virtual numbers section*/
+.virtualsec{
+    width: 68%;
+    align-items: center;
+}
+
+.totalsms1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 39px;
+}
+
 .totalsms{
-    width: 250px;
-    height: 180px;
+    width: 280px;
+    height: 200px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -961,9 +977,74 @@ body{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.now1{
+    text-decoration: none;
+    color: #fff;
+}
+
+.vir{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 120px;
+    margin-top: 20px;
+}
+
+.vir input{
+    background-color: #fff;
+    border-style: none;
+    /* color: #000; */
+    /* border: 1px solid #2c2b2b; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 48px;
+    padding: 0 26px;
+    width: 650px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.vir1{
+    display: flex;
+    justify-content: space-around;
+    width: 144px;
+    gap: 35px;
+}
+
+.vir2{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.countries{
+    font-size: 12px;
+}
+
+.icon7{
+    width: 7px;
+    height: 7px;
+}
 
 
 /*media query*/
+@media(max-width: 1024px){
+    .virtualsec{
+        width: 90%;
+    }
+
+    .mainmessage{
+        width: 90%;
+    }
+    
+    .table6{
+        width: 900px;
+    }
+}
+
 @media(max-width: 768px){
     .form2{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);

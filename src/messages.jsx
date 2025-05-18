@@ -9,19 +9,16 @@ import { faArrowLeft, faArrowsRotate } from '@fortawesome/free-solid-svg-icons'
 const Messages = () =>{
 
     return(
-        <div className="">
-            <div className="totaldash">
-            <Dashboard />
-
             <div className="mainmessage">
+
                 <div className="messSection">
                     <div className="messageIcon">
-                    <div className="icon4"><a href=""><FontAwesomeIcon className="icon2" icon={faArrowLeft} /></a></div>
+                    <div className="icon16"><a href=""><FontAwesomeIcon className="icon2" icon={faArrowLeft} /></a></div>
                     <div className="mess">SMS Messages</div>
                     </div>
 
                     <div className=""><a className="messageIcon1" href="">
-                        <div className="icon4"><FontAwesomeIcon className="icon2" icon={faArrowsRotate} /></div>
+                        <div className="icon16"><FontAwesomeIcon className="icon2" icon={faArrowsRotate} /></div>
                         <div className="refresh">Refresh</div>
                         </a></div>
                 </div>
@@ -30,13 +27,25 @@ const Messages = () =>{
 
                     <div className='table6'>
                         <div className="usa">
-                            <div className="icon4"><img className="icon2" src={usa} alt="" /></div>
+                            <div className="icon16"><img className="icon2" src={usa} alt="" /></div>
 
                             <div>
                                 <div className="usanum">+1 (234) 567-8901</div>
                                <div className="america">United States</div>
                             </div>
                         </div>
+
+                        <div><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_713_2677)">
+<path d="M14.1146 5.33301H7.44796C6.71158 5.33301 6.11462 5.92996 6.11462 6.66634V13.333C6.11462 14.0694 6.71158 14.6663 7.44796 14.6663H14.1146C14.851 14.6663 15.448 14.0694 15.448 13.333V6.66634C15.448 5.92996 14.851 5.33301 14.1146 5.33301Z" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.44796 10.6663C2.71462 10.6663 2.11462 10.0663 2.11462 9.33301V2.66634C2.11462 1.93301 2.71462 1.33301 3.44796 1.33301H10.1146C10.848 1.33301 11.448 1.93301 11.448 2.66634" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_713_2677">
+<rect width="16" height="16" fill="white" transform="translate(0.78125)"/>
+</clipPath>
+</defs>
+</svg></div>
                     </div>
 
                     <div className='table7'>
@@ -67,9 +76,8 @@ const Messages = () =>{
                         <div className="calendar1">Messages are stored for the duration of your number rental period.</div>
                     </div>
                 </div>
+            
             </div>
-            </div>
-        </div>
     )
 }
 

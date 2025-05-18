@@ -11,15 +11,12 @@ import { faHouse, faPhone, faShareNodes } from '@fortawesome/free-solid-svg-icon
 const Referrals = () =>{
 
     return(
-        <div className='main'>
-            <div className='totaldash'>
-           <Dashboard />
-
-            <div className='refer'>
+        <div className='refer'>
                 <div className='referr'>Referrals</div>
 
+                <div className='border2'>
                 <div className='border1'>
-                    <div className='refcode'>Your Referral Code</div>
+                    <div className='refcode'>Your referral link</div>
                     
                     <div className='refcode2'>
                         <div className='refcode1'>SPIRITHQ-JD-2232</div>
@@ -38,11 +35,13 @@ const Referrals = () =>{
 </svg>
 </div>
                             <div className='refcode4'>
-                            <div className='icon4'><FontAwesomeIcon className='icon6' icon={faShareNodes} /></div>
-                            <div>Share</div>
+                            <div className='icon4'><svg className='share1' width='15' height='20' viewBox="0 0 448 512"><path d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" fill='#fff'/></svg></div>
+                            {/* <div className='icon4'><FontAwesomeIcon className='icon6' icon={faShareNodes} /></div> */}
+                            <div className='share'>Share</div>
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
 
                 <div className='referral'>
@@ -73,15 +72,15 @@ const Referrals = () =>{
                 <div><a className='viewall' href="">View all</a></div>
                 </div>
 
-                <div className='table'>
+                <div className='tableview1'>
+                <div className='tableview2'>
                     <div className='table1'>
                         <div className='data'>Name</div>
                         <div className='data'>Service</div>
                         <div className='data'>Amount</div>
                         <div className='data'>Date</div>
-                        <div className='data'>Status</div>
+                        <div className='data data3'>Status</div>
                     </div>
-                </div>
 
                 <div className='table2'>
                     <div className='table3'>
@@ -89,7 +88,7 @@ const Referrals = () =>{
                         <div className='airtime'>Airtime</div>
                         <div className='amount'>#50.00</div>
                         <div className='date'>14th Feb, 2024</div>
-                        <div className='completed'>completed</div> 
+                        <div className='completed data3'><span className='completed1'>completed</span></div> 
                     </div>
 
                     <div className='table3'>
@@ -97,7 +96,7 @@ const Referrals = () =>{
                         <div className='airtime'>Spy App</div>
                         <div className='amount'>#1,530.00</div>
                         <div className='date'>14th Feb, 2024</div>
-                        <div className='process'>processing</div> 
+                        <div className='process data3'><span className='process1'>processing</span></div> 
                     </div>
 
                     <div className='table3'>
@@ -105,14 +104,12 @@ const Referrals = () =>{
                         <div className='airtime'>Movies App</div>
                         <div className='amount'>#3,650.00</div>
                         <div className='date'>14th Feb, 2024</div>
-                        <div className='completed'>completed</div> 
+                        <div className='completed data3'><span className='completed1'>completed</span></div> 
                     </div>
                 </div>
+                </div>
+                </div>
             </div>
-
-            
-            </div>
-        </div>
     )
 }
 

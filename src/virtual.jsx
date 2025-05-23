@@ -1,4 +1,6 @@
-import React from "react";
+import React,{useState, useMemo} from "react";
+import Select from 'react-select';
+import countryList from 'react-select-country-list'
 import './contact.css';
 import Dashboard from "./dashboard";
 import downArrow from './img/downArrow.png'
@@ -15,6 +17,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 const Virtual = () =>{
+    const [value, setValue] = useState('')
+  const options = useMemo(() => countryList().getData(), [])
+
+  const changeHandler = value => {
+    setValue(value)
+  }
 
     return(
         <div className="virtualsec">
@@ -28,7 +36,7 @@ const Virtual = () =>{
                         <div className="icon4"><img className="icon2" src={globe} alt="" /></div>
                         <div className="countries">All Countries</div>
                         </div>
-                        <select className="icon11" name="" id=""></select>
+                        <div className="icon23"><svg className="col2" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
                         {/* <a className="icon7" href=""><img className="icon2" src={downArrow} alt="" /></a> */}
                     </div>
                 </div>
@@ -168,33 +176,251 @@ const Virtual = () =>{
                     </a></div> */}
 
                     <div className="virtual">
+                        <div className="virtual3">
                         <div className="virtual1">
-                        <div>Your Balance</div>
-                        <div>#200,000</div>
+                        <div className="bal">Your balance</div>
+                        <div className="bal1">#200,000.00</div>
                         </div>
 
-                        <div>
-                            <div className="purchase">
-                                <label>Purchase Number</label>
+                        <div className="virtual4">
+                        <div className="virtual8">
+                        <div className="icon20"><svg className="virtual5" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" fill="#008EA8"/></svg></div>
+                        </div>
+                        <div className="add">Add funds</div>
+                        </div>
+                        </div>
+
+                        <div className="mainpurchase">
+                            <div className="purchased">
+                                <label className="purchased1">Purchased Number</label>
+                                <div><input type="number" placeholder="0" /></div>
+                            </div>
+
+                            <div className="virtual6">
+                            <div className="icon20"><svg className="virtual5" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" fill="#008EA8"/></svg></div>
+                            </div>
+                            </div>
+
+                            {/* <div className="mainpurchase">
+                            <div className="purchased">
+                                <label className="purchased1">Rented Numbers</label>
                                 <input type="number" placeholder="0" />
                             </div>
+
+                            <div className="virtual6">
+                            <div className="icon20"><svg className="virtual5" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" fill="#008EA8"/></svg></div>
+                            </div>
+                            </div> */}
+                        
+                    </div>
+
+                    <div className="virtual">
+                      <div className="serviceDiv">
+                            <div className="service">
+                                <div className="purchased2">Service provider</div>
+                                <select className="selectDiv">
+                                    <option className="selectDiv1">Swift Numbers</option>
+                                    <option className="selectDiv1">Dynamic Numbers</option>
+                                </select>
+                            </div>
+                            </div>  
+
+                        <div className="serviceDiv">
+                            <div className="service">
+                                <div className="purchased2">Country</div>
+                                <div className="selectDiv2">
+                                    <Select options={options} value={value} onChange={changeHandler} /></div>
+                            </div>
+                            </div>
+
+                            <div className="serviceDiv3">
+                            <div className="service1">
+                                <div className="purchased2">Price</div>
+                                <div><input type="number" placeholder="#" /></div>
+                            </div>
+
+                            <div className="virtual9">
+                        <div className="virtual10">
+                        <div className="icon20"><svg className="virtual5" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" fill="#008EA8"/></svg></div>
                         </div>
+                        <div className="add1">Purchase</div>
+                        </div>
+                            
+
+                            {/* <div className="virtual6">
+                            <div className="icon20"><svg className="virtual5" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" fill="#008EA8"/></svg></div>
+                            </div> */}
+                            </div>
+                        
                     </div>
 
                     <div className="view1">
-                        <div>Recent activities</div>
+                        <div className="recent">Recent activities</div>
 
-                        <div>See more</div>
+                        <div className="viewall">See more</div>
                     </div>
 
-                    <div>
-                        <div>
-                            <div>Whatsapp</div>
-                            <div></div>
+                    <div className="tableview">
+                        <div>Recent SMS orders</div>
+
+                        <div className="tab1"></div>
+
+                        <table className="maintab">
+                            <thead className="tab3">
+                                <tr className="tabA">
+                                <th className="tab">Order ID</th>
+                                <th className="tab">Number</th>
+                                <th className="tab">Code</th>
+                                <th className="tab">Country</th>
+                                <th className="tab">Service</th>
+                                <th className="tab">Provider</th>
+                                <th className="tab">Amount</th>
+                                <th className="tab">Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody className="tab2">
+                                <tr>
+                                    <td>
+                                    Testing this table for structuring
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div className="tabButton">
+                            <div className="tabButton2">O of 0 row(s) selected.</div>
+
+                            <div className="tabButton1">
+                                <button className="tabBut1">Previous</button>
+                                 <button className="tabBut2">Next</button>
+                            </div>
                         </div>
-                        <div></div>
+                    
+
+                    {/* <div className="tableD">
+                        <div className='table9'>
+                        <div className="maincontain">
+                            <div className="contain">
+                                <div className="virtual7">
+                                <div className="icon21"><svg className='icon22' width="28" height="17" viewBox="0 0 32 32" fill="none">
+            <path d="M28 20C28 20.7072 27.719 21.3855 27.219 21.8856C26.7189 22.3857 26.0406 22.6667 25.3333 22.6667H9.33333L4 28V6.66667C4 5.95942 4.28095 5.28115 4.78105 4.78105C5.28115 4.28095 5.95942 4 6.66667 4H25.3333C26.0406 4 26.7189 4.28095 27.219 4.78105C27.719 5.28115 28 5.95942 28 6.66667V20Z" stroke="#008EA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></div>
+            </div>
+
+                        <div>
+                            <div className="whatsapp1">Whatsapp</div>
+                            <div className="whatsapp2">Mar 3, 2025 - 12:19pm</div>
+                        </div>
+                            </div>
+
+                            <div>
+                                <div className="whatsapp3">#4,800</div>
+                                <div className="dot1">
+                                    <div className=""><svg className="dot" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" fill="yellow"/></svg></div>
+                                    <div className="whatsapp2">Pending</div>
+                                </div>
+                            </div>
+                        </div>
+
+                                
+
+                        </div>
+
+                    <div className='table9'>
+                        <div className="maincontain">
+                            <div className="contain">
+                                <div className="virtual7">
+                                <div className="icon21"><svg className='icon22' width="28" height="17" viewBox="0 0 32 32" fill="none">
+            <path d="M28 20C28 20.7072 27.719 21.3855 27.219 21.8856C26.7189 22.3857 26.0406 22.6667 25.3333 22.6667H9.33333L4 28V6.66667C4 5.95942 4.28095 5.28115 4.78105 4.78105C5.28115 4.28095 5.95942 4 6.66667 4H25.3333C26.0406 4 26.7189 4.28095 27.219 4.78105C27.719 5.28115 28 5.95942 28 6.66667V20Z" stroke="#008EA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></div>
+            </div>
+
+                        <div>
+                            <div className="whatsapp1">3fun</div>
+                            <div className="whatsapp2">Mar 3, 2025 - 12:08pm</div>
+                        </div>
+                            </div>
+
+                            <div>
+                                <div className="whatsapp3">#840</div>
+                                <div className="dot1">
+                                    <div className=""><svg className="dot" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" fill="green"/></svg></div>
+                                    <div className="whatsapp2">Refunded</div>
+                                </div>
+                            </div>
+                        </div>
+
+                                
+
+                              
                     </div>
-        </div>
+
+                    <div className='table9'>
+                        <div className="maincontain">
+                            <div className="contain">
+                                <div className="virtual7">
+                                <div className="icon21"><svg className='icon22' width="28" height="17" viewBox="0 0 32 32" fill="none">
+            <path d="M28 20C28 20.7072 27.719 21.3855 27.219 21.8856C26.7189 22.3857 26.0406 22.6667 25.3333 22.6667H9.33333L4 28V6.66667C4 5.95942 4.28095 5.28115 4.78105 4.78105C5.28115 4.28095 5.95942 4 6.66667 4H25.3333C26.0406 4 26.7189 4.28095 27.219 4.78105C27.719 5.28115 28 5.95942 28 6.66667V20Z" stroke="#008EA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></div>
+            </div>
+
+                        <div>
+                            <div className="whatsapp1">Aol</div>
+                            <div className="whatsapp2">Feb 19, 2025 - 23:01pm</div>
+                        </div>
+                            </div>
+
+                            <div>
+                                <div className="whatsapp3">#400</div>
+                                <div className="dot1">
+                                    <div className=""><svg className="dot" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" fill="green"/></svg></div>
+                                    <div className="whatsapp2">Refunded</div>
+                                </div>
+                            </div>
+                        </div>
+
+                                
+
+                              
+                    </div>
+
+                    <div className='table9'>
+                        <div className="maincontain">
+                            <div className="contain">
+                                <div className="virtual7">
+                                <div className="icon21"><svg className='icon22' width="28" height="17" viewBox="0 0 32 32" fill="none">
+            <path d="M28 20C28 20.7072 27.719 21.3855 27.219 21.8856C26.7189 22.3857 26.0406 22.6667 25.3333 22.6667H9.33333L4 28V6.66667C4 5.95942 4.28095 5.28115 4.78105 4.78105C5.28115 4.28095 5.95942 4 6.66667 4H25.3333C26.0406 4 26.7189 4.28095 27.219 4.78105C27.719 5.28115 28 5.95942 28 6.66667V20Z" stroke="#008EA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></div>
+            </div>
+
+                        <div>
+                            <div className="whatsapp1">Apple</div>
+                            <div className="whatsapp2">Feb 9, 2025 - 12:00am</div>
+                        </div>
+                            </div>
+
+                            <div>
+                                <div className="whatsapp3">#400</div>
+                                <div className="dot1">
+                                    <div className=""><svg className="dot" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" fill="green"/></svg></div>
+                                    <div className="whatsapp2">Refunded</div>
+                                </div>
+                            </div>
+                        </div>
+
+                                
+
+                              
+                    </div>
+                        </div> */}
+
+
+                        
+
+
+                    </div>
     )
 }
 

@@ -13,7 +13,7 @@ const Questions = () =>{
     const faqInfo = [
         {id:1, click: ()=> setFaqOne(!faqOne), test: 'What services do Spirit Media offer?', test1: 'Spirit Media is a platform to purchase movies, virtual numbers, etc.'},
         {id:2, click: ()=> setFaqTwo(!faqTwo), test: 'Is the support team always available?', test1: 'Yes, the support team is active 24/7.'},
-        {id:3,  click: ()=> setFaqThree(!faqThree),test: 'Does Spirit Media make refunds?', test1: 'Yes, for all unsuccessful, transactions, we return your funds to your wallet.'},
+        {id:3, click: ()=> setFaqThree(!faqThree),test: 'Does Spirit Media make refunds?', test1: 'Yes, for all unsuccessful, transactions, we return your funds to your wallet.'},
         {id:4, click: ()=> setFaqFour(!faqFour), test: 'How can I purchase airtime/data?', test1: 'You can purchase airtime/data in the Airtime/data page.'},
         {id:5, click: ()=> setFaqFive(!faqFive), test: 'How do I fund my wallet?', test1: 'You can fund your wallet by simply hitting the "Fund wallet" button, and follow procedures.'}
 

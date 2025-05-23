@@ -110,6 +110,22 @@ const Dashboard = () =>{
                                 <li className="help1 col2" onClick={() => setSection(<Help />)}>Get in touch</li>
                                 <li className="help1 col2" >Join community</li>
                                 <li className="help1 col2" onClick={() => setSection(<Questions />)}>FAQs</li>
+
+                                {/* <div className="dot2 col2" onClick={() => setSection(<Help />)}>
+                                    <div className=""><svg className="dot col" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" stroke="#000"/></svg></div>
+                                <div className="help1 col2" >Get in touch</div>
+                                </div>
+
+                                 <div className="dot2 col2" onClick={() => setSection(<Help />)}>
+                                    <div className=""><svg className="dot col" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" stroke="#000"/></svg></div>
+                                <div className="help1 col2" >Join community</div>
+                                </div>
+
+                                 <div className="dot2 col2" onClick={() => setSection(<Help />)}>
+                                    <div className=""><svg className="dot col" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" stroke="#000"/></svg></div>
+                                <div className="help1 col2" >FAQs</div>
+                                </div> */}
+                                
                             </ul>
                             </div>
                         : ''}
@@ -183,8 +199,32 @@ const Dashboard = () =>{
                                     <div>Earnings</div></div>
                                     </li>
                            
+                           <div className="list dash2 col2" style={{padding: '2px 0px'}}>
+                            <div className="arr col  mcol3" onClick={() => setShow(!show)}>
+                            <div className="support">
+                            <div className="icon17"><svg className="col" width="25" height="25" viewBox="0 0 48 48" fill="none">
+<path d="M18.18 18C18.6502 16.6633 19.5783 15.5362 20.7999 14.8183C22.0215 14.1003 23.4578 13.8379 24.8544 14.0774C26.2509 14.317 27.5176 15.043 28.4302 16.1271C29.3427 17.2111 29.8421 18.583 29.84 20C29.84 24 23.84 26 23.84 26M24 34H24.02M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+                                <div className='dash3'>Help & Support</div>
+                                </div> 
+                            <div className="icon15">
+                                {show ? <svg className="col2" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg> : <svg className="col2" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>}
+                                </div>
+                            </div>
 
-                            <div className="list">
+                        {!show ?
+                            <div className="itemsB">
+                            <ul className="itemsA">
+                                <li className="help1 col2" onClick={() => setSection(<Help />)}>Get in touch</li>
+                                <li className="help1 col2" >Join community</li>
+                                <li className="help1 col2" onClick={() => setSection(<Questions />)}>FAQs</li>
+                            </ul>
+                            </div>
+                        : ''}
+                            </div>
+
+                            {/* <div className="list">
                             <div className="col support2" onClick={() => setSection()}>
                             <div className="icon17"><svg className="col" width="48" height="48" viewBox="0 0 48 48" fill="none">
 <path d="M18.18 18C18.6502 16.6633 19.5783 15.5362 20.7999 14.8183C22.0215 14.1003 23.4578 13.8379 24.8544 14.0774C26.2509 14.317 27.5176 15.043 28.4302 16.1271C29.3427 17.2111 29.8421 18.583 29.84 20C29.84 24 23.84 26 23.84 26M24 34H24.02M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -204,7 +244,7 @@ const Dashboard = () =>{
                                 <li className="help1 col2" onClick={() => setSection(<Questions />)}>FAQs</li>                            </ul>
                             </div>
                         : ''}
-                            </div>
+                            </div> */}
 
                              </ul>
                             

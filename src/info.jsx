@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import './contact.css';
 import Vendor from "./vendor";
 import user1 from './img/user1.png'
 
 
 const Info = () =>{
+    const [update, setUpdate] = useState('');
+
+    const Update = ()=>{
+
+        return(
+            window.alert('Coming soon!')
+        )
+    }
 
     return(
         <div className="feed">
@@ -50,7 +58,7 @@ const Info = () =>{
 
             <div className="formDetails formDoc">
                     <div className="downline downline1">
-                    <div className="continue1"><a className="continue" href="">Continue</a></div>
+                    <div className="continue1"><a className="continue" href="" onClick={()=> setUpdate(Update)}>Continue</a></div>
                     </div>
                 </div>
             </form>

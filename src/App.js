@@ -11,6 +11,7 @@ import Overview from './overview';
 // import Info from './info';
 // import Contact from './contact';
 // import Business from './business';
+// import Page2 from './internationalpage';
 import Help from './help';
 import Questions from './questions';
 
@@ -52,6 +53,7 @@ function App() {
     <BrowserRouter> 
     <div className=''>
       <Dashboard />
+      {/* <Page2 /> */}
       {/* {section} */}
     {/* {section === 'Overview' ? <Overview /> : section === "Virtual" ? <Virtual /> : section === 'Messages' ? <Messages /> : section === 'Referrals' ? <Referrals /> : section === 'Earnings' ? <Earnings /> : <Overview /> } */}
     </div>
@@ -65,6 +67,7 @@ function App() {
     {/* <Business /> */}
     {/* <Vendor /> */}
     <Routes>
+      {/* <Route path='/internationalpage' element={<Page2 />} /> */}
       {/* <Route path='/info' element={<Info />} /> */}
     </Routes>
     

@@ -28,7 +28,7 @@ const Virtual = () =>{
         <div className="virtualsec">
                     <div className="referr">Virtual Numbers</div>
 
-                <div className="vir">
+                {/* <div className="vir">
                     <input type="text" placeholder="Search by number or country"/>
 
                     <div className="vir1">
@@ -37,9 +37,8 @@ const Virtual = () =>{
                         <div className="countries">All Countries</div>
                         </div>
                         <div className="icon23"><svg className="col2" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
-                        {/* <a className="icon7" href=""><img className="icon2" src={downArrow} alt="" /></a> */}
                     </div>
-                </div>
+                </div> */}
 
                     {/* <div className="totalsms1">
                     <div className="totalsms">
@@ -265,6 +264,8 @@ const Virtual = () =>{
 
                         <div className="tab1"></div>
 
+                    <div className="tableview1">
+                        <div className="tableview2">
                         <table className="maintab">
                             <thead className="tab3">
                                 <tr className="tabA">
@@ -287,8 +288,11 @@ const Virtual = () =>{
                                 </tr>
                             </tbody>
                         </table>
+                        </div>
+                        </div>
                     </div>
 
+                            
                     <div className="tabButton">
                             <div className="tabButton2">O of 0 row(s) selected.</div>
 

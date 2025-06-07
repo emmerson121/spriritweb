@@ -1,4 +1,5 @@
 import React,{useState, useMemo} from "react";
+import axios from "axios";
 import Select from 'react-select';
 import countryList from 'react-select-country-list'
 import './contact.css';
@@ -14,11 +15,22 @@ import japan from './img/japan.png';
 import australia from './img/australia.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faHouse } from "@fortawesome/fontawesome-free-solid";
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+// import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 const Virtual = () =>{
     const [value, setValue] = useState('')
-  const options = useMemo(() => countryList().getData(), [])
+  const options = useMemo(() => countryList().getData(), []);
+  const [getApi, setGetApi] = useState('');
+
+  const myApi = () =>{
+    axios.get('https://www.smspool.net/purchase/sms/service')
+    .then((res) =>{
+        setGetApi(res.data.content)
+        console.log(res.data.content)
+    }).catch((err) =>{
+        setGetApi(err)
+    })
+  }
 
   const changeHandler = value => {
     setValue(value)
@@ -218,8 +230,27 @@ const Virtual = () =>{
                             <div className="service">
                                 <div className="purchased2">Service provider</div>
                                 <select className="selectDiv">
+                                    <option className="selectDiv1" value='Select service provider' selected>Select service provider...</option>
                                     <option className="selectDiv1">Swift Numbers</option>
                                     <option className="selectDiv1">Dynamic Numbers</option>
+                                </select>
+                            </div>
+                            </div>  
+
+                         <div className="serviceDiv">
+                            <div className="service">
+                                <div className="purchased2">Services</div>
+                                <select className="selectDiv" placeholder='Select service' onClick={myApi}>
+                                    <option className="selectDiv1" value='Select service...' selected>Select service...</option>
+                                    <option className="selectDiv1" value='1688'>1688</option>
+                                    <option className="selectDiv1" value='1Q'>1Q</option>
+                                    <option className="selectDiv1" value='1StopMove'>1StopMove</option>
+                                     <option className="selectDiv1" value='2dehands'>2dehands</option>
+                                      <option className="selectDiv1" value='2game'>2game</option>
+                                       <option className="selectDiv1" value='360NRS'>360NRS</option>
+                                        <option className="selectDiv1" value='3Fun'>3Fun</option>
+                                         <option className="selectDiv1" value='Smiles'>Smiles</option>
+                                          <option className="selectDiv1" value='Mall'>7Mall</option>
                                 </select>
                             </div>
                             </div>  
@@ -239,9 +270,9 @@ const Virtual = () =>{
                             </div>
 
                             <div className="virtual9">
-                        <div className="virtual10">
+                        {/* <div className="virtual10">
                         <div className="icon20"><svg className="virtual5" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" fill="#008EA8"/></svg></div>
-                        </div>
+                        </div> */}
                         <div className="add1">Purchase</div>
                         </div>
                             
@@ -253,14 +284,14 @@ const Virtual = () =>{
                         
                     </div>
 
-                    <div className="view1">
+                    {/* <div className="view1">
                         <div className="recent">Recent activities</div>
 
                         <div className="viewall">See more</div>
-                    </div>
+                    </div> */}
 
                     <div className="tableview">
-                        <div>Recent SMS orders</div>
+                        <div className="recent2">Recent SMS orders</div>
 
                         <div className="tab1"></div>
 
@@ -281,9 +312,9 @@ const Virtual = () =>{
                             </thead>
 
                             <tbody className="tab2">
-                                <tr>
+                                <tr className="tab4">
                                     <td>
-                                    Testing this table for structuring
+                                
                                     </td>
                                 </tr>
                             </tbody>

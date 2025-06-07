@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import './contact.css';
 // import Dashboard from "./dashboard";
 
 const Help = () =>{
+    const [isChecked, setIsChecked] = useState(true);
 
+    const isTicked = () =>{
+        setIsChecked(false);
+    }
     return(
         <div className="help">
 
@@ -68,7 +72,8 @@ const Help = () =>{
             </div>
 
             <div className="check">
-                    <input type="checkbox" />
+                    {/* <input type="text" value={inputValue} onChange={isTicked} /> */}
+                    <input type="checkbox" /*defaultChecked={true}*/ checked={isChecked} readOnly/>
                     <div className="agree">I agree to receive emails, newsletters, and promotional messages</div>
                 </div>
 

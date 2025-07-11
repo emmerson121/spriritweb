@@ -1,0 +1,218 @@
+.spiritmedia1{
+    padding: 50px;
+}
+
+.segment1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.spiritmedia{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 30px;  
+}
+
+.stack2{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.stack3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.stack1{
+    width: 30px;
+}
+
+.stack{
+    width: 100%;
+    height: 100%;
+}
+
+.cash1{
+    width: 75px;
+    height: 100%;
+}
+
+.cash{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 28, 60, 0.05);
+}
+
+.work{
+    text-align: center;
+}
+
+.sear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sear1{
+    width: 5px;
+}
+
+.sear2{
+    width: 20px;
+    height: 100%;
+}
+
+.work1{
+    font-size: 16px;
+}
+
+.verify{
+    font-weight: bold;
+    /* font-size: 16px; */
+    margin-bottom: 20px;
+}
+
+.division{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.involve{
+    /* font-size: 18px; */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.whyjoin{
+    background-color: #c3dff58c;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.genspirit{
+    margin-bottom: 10px;
+}
+
+.join{
+    margin-bottom: 10px;
+}
+
+.part1{
+    gap: 10px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.part2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.circle3{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.services{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.circle4{
+    background-color: #eff9fb;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.circle2{
+    width: 100%;
+    height: 100%;
+    fill: #008EA8;
+}
+
+.circle1{
+    width: 10px;
+    height: 100%;
+}
+
+.circle{
+    width: 100%;
+    height: 100%;
+    fill: #008EA8;
+}
+
+.passive span{
+    color: #008EA8;
+}
+
+.download{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bonus{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.free{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.free1{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.free2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.started{
+    margin-bottom: 20px;
+}
+
+.aff{
+    margin-bottom: 10px;
+}
+
+.fade{
+    margin-bottom: 20px;
+}
+
+.sleep{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+

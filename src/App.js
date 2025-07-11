@@ -12,6 +12,7 @@ import Overview from './overview';
 // import Contact from './contact';
 // import Business from './business';
 // import Page2 from './internationalpage';
+import Refer from './refer';
 import Help from './help';
 import Questions from './questions';
 
@@ -47,6 +48,7 @@ function App() {
     <BrowserRouter> 
     <div className=''>
       <Dashboard />
+      <Refer />
       {/* <Page2 /> */}
       {/* {section} */}
     {/* {section === 'Overview' ? <Overview /> : section === "Virtual" ? <Virtual /> : section === 'Messages' ? <Messages /> : section === 'Referrals' ? <Referrals /> : section === 'Earnings' ? <Earnings /> : <Overview /> } */}

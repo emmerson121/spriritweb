@@ -12,6 +12,7 @@ import Referrals from './referrals';
 import Earnings from './earnings';
 import Help from "./help";
 import Questions from "./questions";
+import Refer from "./refer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faHouse } from "@fortawesome/fontawesome-free-solid";
@@ -112,20 +113,6 @@ const Dashboard = () =>{
                                 <li className="help1 col2" >Join community</li>
                                 <li className="help1 col2" onClick={() => setSection(<Questions />)}>FAQs</li>
 
-                                {/* <div className="dot2 col2" onClick={() => setSection(<Help />)}>
-                                    <div className=""><svg className="dot col" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" stroke="#000"/></svg></div>
-                                <div className="help1 col2" >Get in touch</div>
-                                </div>
-
-                                 <div className="dot2 col2" onClick={() => setSection(<Help />)}>
-                                    <div className=""><svg className="dot col" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" stroke="#000"/></svg></div>
-                                <div className="help1 col2" >Join community</div>
-                                </div>
-
-                                 <div className="dot2 col2" onClick={() => setSection(<Help />)}>
-                                    <div className=""><svg className="dot col" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" stroke="#000"/></svg></div>
-                                <div className="help1 col2" >FAQs</div>
-                                </div> */}
                                 
                             </ul>
                             </div>

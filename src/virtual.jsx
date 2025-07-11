@@ -1,4 +1,4 @@
-import React,{useState, useMemo} from "react";
+import React,{useState, useEffect, useMemo} from "react";
 import axios from "axios";
 import Select from 'react-select';
 import countryList from 'react-select-country-list'
@@ -20,22 +20,29 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Virtual = () =>{
     const [value, setValue] = useState('')
   const options = useMemo(() => countryList().getData(), []);
-  const [getApi, setGetApi] = useState('');
-
-  const myApi = () =>{
-    axios.get('https://www.smspool.net/purchase/sms/service')
-    .then((res) =>{
-        setGetApi(res.data.content)
-        console.log(res.data.content)
-    }).catch((err) =>{
-        setGetApi(err)
-    })
-  }
+  const [getApi, setGetApi] = useState([ ]);
+  const [myApi, setMyApi] = useState([]);
+  
 
   const changeHandler = value => {
     setValue(value)
   }
 
+  useEffect(() =>{
+         const apiUrl = 'https://api.smspool.net/service/retrieve_all';
+
+     axios.get(apiUrl)
+       .then(response => {
+         // Handle the successful response
+         setMyApi(response.data);
+       })
+       .catch(error => {
+         // Handle errors
+         console.error('Error:', error);
+       });
+
+    
+  }, [])
     return(
         <div className="virtualsec">
                     <div className="referr">Virtual Numbers</div>
@@ -237,23 +244,40 @@ const Virtual = () =>{
                             </div>
                             </div>  
 
+                        
                          <div className="serviceDiv">
                             <div className="service">
                                 <div className="purchased2">Services</div>
-                                <select className="selectDiv" placeholder='Select service' onClick={myApi}>
+                                <select className="selectDiv" placeholder='Select service'>
                                     <option className="selectDiv1" value='Select service...' selected>Select service...</option>
-                                    <option className="selectDiv1" value='1688'>1688</option>
-                                    <option className="selectDiv1" value='1Q'>1Q</option>
+                                    {myApi.map((app)=>(
+                                        <div key={app.id.name}>
+                                            <div onClick={app.click}>
+                                    <option className="selectDiv1">{app.id.name}</option>
+                                    </div>
+                                    </div>
+                                    ))}
+                                    {/* <option className="selectDiv1" value='1Q'>1Q</option>
                                     <option className="selectDiv1" value='1StopMove'>1StopMove</option>
                                      <option className="selectDiv1" value='2dehands'>2dehands</option>
                                       <option className="selectDiv1" value='2game'>2game</option>
                                        <option className="selectDiv1" value='360NRS'>360NRS</option>
                                         <option className="selectDiv1" value='3Fun'>3Fun</option>
                                          <option className="selectDiv1" value='Smiles'>Smiles</option>
+                                         <option className="selectDiv1" value='Mall'>7-Eleven</option>
                                           <option className="selectDiv1" value='Mall'>7Mall</option>
+                                          <option className="selectDiv1" value='Mall'>888Poker</option>
+                                          <option className="selectDiv1" value='Mall'>AARP Rewards</option>
+                                          <option className="selectDiv1" value='Mall'>Ablo</option>
+                                          <option className="selectDiv1" value='Mall'>Abra</option>
+                                          <option className="selectDiv1" value='Mall'>AccountKit</option>
+                                          <option className="selectDiv1" value='Mall'>Adidas</option>
+                                          <option className="selectDiv1" value='Mall'>Ad It Up</option>
+                                          <option className="selectDiv1" value='Mall'>ADlist24</option>
+                                          <option className="selectDiv1" value='Mall'>Adobe</option> */}
                                 </select>
+                                </div>
                             </div>
-                            </div>  
 
                         <div className="serviceDiv">
                             <div className="service">

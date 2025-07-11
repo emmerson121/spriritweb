@@ -558,10 +558,6 @@ body{
     font-size: 13px;
 }
 
-.support2{
-    /* display: none; */
-}
-
 @media(min-width: 769px){
     .support2{
         display: none;
@@ -584,14 +580,6 @@ body{
     z-index: 200;
     /* margin-top: 30px; */
     
-}
-
-.support3{
-    /* position: absolute; */
-    /* padding: 10px; */
-    /* right: 60px; */
-    /* z-index: 1000; */
-
 }
 
 .line3{
@@ -1342,6 +1330,22 @@ body{
     padding: 5px;
     border-radius: 5px;
 }
+
+.selectDiv:focus{
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.selectDiv option{
+    padding: 8px;
+    font-size: 14px;
+}
+
+.selectDiv option:hover{
+     background-color: #f0f0f0;
+}
+
 
 .selectDiv1{
     width: 100%;
@@ -2139,7 +2143,6 @@ table{
     /* margin-right: 100px; */
 }
 
-
 /*media query*/
 @media(max-width: 1024px){
 /*Overview section*/
@@ -2734,9 +2737,14 @@ table{
         /* overflow-x: hidden; */ 
     }
 
-    .tableview3{
+    /* .tableview3{
         overflow-y: scroll;
+        width: 100%;
     }
+
+    .tableview4{
+        width: 100px;
+    } */
 
     .referral{
         /* display: flex; */

@@ -161,12 +161,22 @@ const Refer = () =>{
             <div className="free">Don't Sleep on This</div>
             </div>
            
+        <div className="part2">
+        <div className="circle1"><svg className="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg></div>
+        <div>The best time to build passive income was yesterday.</div>
+        </div>
 
-<div className="aff">The best time to build passive income was yesterday.</div>
-<div className="aff">The next best time is now.</div>
-<div className="aff">Join hundreds already earning daily and growing their financial freedom with Spirit Media.</div>
+        <div className="part2">
+        <div className="circle1"><svg className="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg></div>
+        <div>The next best time is now.</div>
+        </div>
 
-<div className="free2">Join the Affiliate Program Now!</div>
+        <div className="part2">
+        <div className="circle1"><svg className="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg></div>
+        <div>Join hundreds already earning daily and growing their financial freedom with Spirit Media.</div>
+        </div>
+
+        <div className="free2">Join the Affiliate Program Now!</div>
         </div>
         </div>
       </div>  

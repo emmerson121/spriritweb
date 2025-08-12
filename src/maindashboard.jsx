@@ -8,13 +8,14 @@ const Dashboard1 = () =>{
 
     return(
         <div>
-           <div style={{display: 'flex'}}>
-      <div style={{width: '25%'}}>
+           <div className="">
+      <div className="">
       <Admin />
       </div>
 
-      <div>
+      <div className="">
       <AdminOverview />
+      <User />
       {/* <User /> */}
       </div>
       </div> 

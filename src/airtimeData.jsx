@@ -17,8 +17,8 @@ const Airtime = () =>{
                 <div className="heading">Airtime & Data Transactions</div>
             </div>
 
-            <div>
-                <div>
+            <div className='scroll1'>
+            <div className='scroll2'>
                 <div className="firsttable">    
                 <div className="secondtable">
                     <div className="size1">ID</div>

@@ -9,7 +9,7 @@ const Overview = () =>{
 const [section, setSection] = useState('Overview');
 
     return(
-            <div className='over2'>
+            <div className='over'>
             <div className="referr">Overview</div>
 
             <div className='wallet'>

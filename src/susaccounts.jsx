@@ -10,10 +10,9 @@ const Susaccounts = () =>{
     ]
     
     return(
-        <div className='subscriptions'>
+        <div className='over3'>
         <div className='subtitle'>
-            <div></div>
-            <div className='suspense'>Suspicious Accounts</div>
+            <div className='heading'>Suspicious Accounts</div>
         </div>
         <div className='maincard'>
         {suspiciousAcc.map((app,id) =>(

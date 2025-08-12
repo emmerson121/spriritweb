@@ -136,8 +136,8 @@ const AdminOverview = () =>{
 // }
     
     return(
-        <div className="over2">
-            <div className="referr">Overview</div>
+        <div className="over3">
+            <div className="heading">Overview</div>
 
             <div className='wall'>
             {adminOver.map((app, id) =>(
@@ -153,8 +153,8 @@ const AdminOverview = () =>{
                 ))}
             </div>
 
-            <div>
-              <div>
+            <div className="">
+              <div className="chartDetails">
     <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
     <CartesianGrid stroke="#aaa" strokeDasharray="5 5" />
     <Line type="monotone" dataKey="uv" stroke="purple" strokeWidth={2} name="My data series name" />
@@ -199,11 +199,13 @@ const AdminOverview = () =>{
                   <div className="sales1">See all</div>
                 </div>
 
+            <div className='scroll1'>
+            <div className='scroll2'>
             <div className="firsttable">
               <div className="secondtable">
                 <div className="size1">Product ID</div>
                 <div className="size1">Product Name</div>
-                <div className="size1">Product Description</div>
+                <div className="size1">Product Descript.</div>
                 <div className="size1">Product User</div>
                 <div className="size1">Phone</div>
                 <div className="size1">Amount</div>
@@ -225,6 +227,8 @@ const AdminOverview = () =>{
                 </div>
                ))} 
               </div>
+            </div>
+            </div>
             </div>
         </div>
     )

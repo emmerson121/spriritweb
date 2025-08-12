@@ -13,10 +13,11 @@ const Cable = () =>{
     return(
         <div className='subscriptions'>
             <div className='subtitle'>
-                <div></div>
                 <div className='heading'>Cable TV Transactions</div>
             </div>
 
+            <div className='scroll1'>
+            <div className='scroll2'>
             <div className='firsttable'>
                 <div className="secondtable">
                     <div className="size1">ID</div>
@@ -39,6 +40,8 @@ const Cable = () =>{
                     <div className="duration">{app.subDate}</div>
                 </div>
                 ))}
+            </div>
+            </div>
             </div>
         </div>
     )

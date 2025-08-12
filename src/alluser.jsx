@@ -11,8 +11,7 @@ const User = () =>{
     ]
 
     return(
-        <div>
-        <div>         
+        <div className='allusers'>         
             <form action="" className='formdett'>
             <div className='tabbutton'>
                 
@@ -44,7 +43,6 @@ const User = () =>{
         ))}
 
         
-        </div>
         </div>
         </div>
     )

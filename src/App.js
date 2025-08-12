@@ -5,23 +5,7 @@ import './App.css';
 import Admin from './admindashboard';
 import Dashboard from './dashboard';
 import Overview from './overview';
-// import Virtual from './virtual';
-// import Messages from './messages';
-// import Referrals from './referrals';
-// import Earnings from './earnings';
-// import Info from './info';
-// import Contact from './contact';
-// import Business from './business';
-// import Page2 from './internationalpage';
 import Refer from './refer';
-import Help from './help';
-import Questions from './questions';
-import Dashboard1 from './maindashboard';
-import AdminOverview from './adminoverview';
-import User from './alluser';
-import Susaccounts from './susaccounts';
-import Airtime from './airtimeData';
-import Cable from './cable';
 
 function App() {
 
@@ -56,11 +40,7 @@ function App() {
     <div className=''>
       <Dashboard />
       <Refer />
-      <Dashboard1 />
-      <User />
-      <Susaccounts />
-      <Airtime />
-      <Cable />
+      <Admin />
       {/* <Page2 /> */}
       {/* {section} */}
     {/* {section === 'Overview' ? <Overview /> : section === "Virtual" ? <Virtual /> : section === 'Messages' ? <Messages /> : section === 'Referrals' ? <Referrals /> : section === 'Earnings' ? <Earnings /> : <Overview /> } */}

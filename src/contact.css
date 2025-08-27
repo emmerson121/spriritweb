@@ -4,9 +4,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-color: rgba(14, 28, 60, 0.05);
+    --bg: rgba(14, 28, 60, 0.05);
+    --text-color: #008EA8;
+    --color: #707070;
+}
+
 body{
     /* background-color: #f2f2f2; */
-    background-color: rgba(14, 28, 60, 0.05);
+    background-color: var(--bg-color);
     font-style: normal;
     font-weight: 500;
     color: #000;
@@ -48,7 +55,7 @@ body{
 
 
 .one{
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     width: 45px;
     height: 43px;
@@ -58,14 +65,14 @@ body{
 }
 
 .bord{
-    background-color: #008EA8;
+    background-color: var(--text-color);
     width: 315px;
     height: 6px;
     border-radius: 5px;
 }
 
 .two{
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     width: 45px;
     height: 43px;
@@ -84,7 +91,7 @@ body{
 
 .three{
     background-color: #e3e2e2;
-    color: #707070;
+    color: var(--color);
     width: 45px;
     height: 43px;
     border-radius: 28px;
@@ -154,7 +161,7 @@ body{
 }
 
 .continue1{
-    background-color: #008EA8;
+    background-color: var(--text-color);
     width: 120px;
     height: 45px;
     border-radius: 20px;
@@ -169,7 +176,7 @@ body{
 }
 
 .copyright{
-    color: #707070;
+    color: var(--color);
     text-align: center;
     font-size: 12px;
     margin-top: 50px;
@@ -202,25 +209,25 @@ body{
 }
 
 .first{
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
 }
 
 .second{
-    background-color: #008EA8;
+    background-color: var(--text-color);
 }
 
 .third{
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
 }
 
 .fourth{
-    background-color: #008EA8;      
+    background-color: var(--text-color);      
 }
 
 .fifth{
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     
 }
@@ -265,7 +272,7 @@ body{
 }
 
 .check > div span{
-    color: #008EA8;
+    color: var(--text-color);
 }
 
 .agree{
@@ -273,7 +280,7 @@ body{
 }
 
 .continue2{
-    background-color: #008EA8;
+    background-color: var(--text-color);
     width: 150px;
     height: 100%;
     border-radius: 20px;
@@ -282,7 +289,7 @@ body{
 }
 
 .copyright1{
-    color: #707070;
+    color: var(--color);
     text-align: center;
     font-size: 12px;
     margin-top: 60px;
@@ -319,7 +326,7 @@ body{
 
 .colo4{
     background-color: #e3e2e2;
-    color: #707070;
+    color: var(--color);
 }
 
 .formDoc1{
@@ -374,7 +381,7 @@ body{
 .list1:hover{
     cursor: pointer;
     background-color: #eff9fb;
-    color: #008EA8;
+    color: var(--color);
     /* font-size: 20px; */
 }
 
@@ -395,16 +402,16 @@ body{
 
 
 .col:hover path{
-    stroke: #008EA8;
-    background-color: #008EA8;
+    stroke: var(--text-color);
+    background-color: var(--text-color);
     /* fill: #008EA8; */
 }
 
 
 
 .col2:hover{
-    color: #008EA8;
-    fill: #008EA8;
+    color: var(--text-color);
+    fill: var(--text-color);
     cursor: pointer;
 }
 
@@ -448,12 +455,12 @@ body{
 .list3:hover{
     cursor: pointer;
     background-color: #eff9fb;
-    color: #008EA8;
+    color: var(--text-color);
     /* font-size: 20px; */
 }
 
 .dash{
-    color: #008EA8;
+    color: var(--text-color);
     font-size: 18px;
     font-weight: bold;
     padding: 20px;
@@ -550,7 +557,7 @@ body{
 .support:hover{
     cursor: pointer;
     background-color: #eff9fb;
-    color: #008EA8;
+    color: var(--text-color);
     /* font-size: 20px; */
 }
 
@@ -571,7 +578,7 @@ body{
     width: 70px;
     height: 70px;
     /* background-color: rgba(18 25 40 / 18%); */
-    background-color: #008EA8;
+    background-color: var(--text-color);
     border-radius: 50%;
     box-shadow: 0 2px 5px #ddcece4d;
     position: fixed;
@@ -600,7 +607,7 @@ body{
     width: 48px;
     height: 45px;
     background-color: #e3e2e2;
-    color: #707070;
+    color: var(--color);
     font-size: 23px;
     font-weight: bold;
     border-radius: 30px;
@@ -681,7 +688,7 @@ body{
 .refcode4{
     width: 112px;
     height: 40px;
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     border-radius: 10px;
     display: flex;
@@ -725,7 +732,7 @@ body{
 .ref3{
     font-size: 22px;
     font-weight: bold;
-    color: #008EA8;
+    color: var(--text-color);
 }
 
 .recent{
@@ -741,7 +748,7 @@ body{
 }
 
 .viewall{
-    color: #008EA8;
+    color: var(--text-color);
     font-size: 13px;
     font-weight: bold;
     text-decoration: none;
@@ -907,7 +914,7 @@ body{
 .withdraw{
     width: 160px;
     height: 45px;
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     padding: 15px;
     border-radius: 10px;
@@ -1022,7 +1029,7 @@ body{
     height: 35px;
     background-color: #fff;
     color: #000;
-    border: 0.1px solid #707070;
+    border: 0.1px solid var(--color);
     /* border-color: 0.1px solid #707070; */
     padding: 10px;
     border-radius: 5px;
@@ -1108,7 +1115,7 @@ body{
 }
 
 .foreign1{
-    color: #008EA8;
+    color: var(--text-color);
     margin-top: -10px;
     margin-bottom: 15px;
     /* font-size: 18px; */
@@ -1119,7 +1126,7 @@ body{
 }
 
 .calendar{
-    color: #707070;
+    color: var(--color);
     font-size: 13px;
 }
 
@@ -1131,7 +1138,7 @@ body{
 }
 
 .calendar1{
-    color: #707070;
+    color: var(--color);
     font-size: 10.5px;
 }
 
@@ -1153,7 +1160,7 @@ body{
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     width: 140px;
     height: 50px;
@@ -1201,7 +1208,7 @@ body{
     /* display: flex; */
     /* align-items: center; */
     /* gap: 10px; */
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     width: 80px;
     height: 40px;
@@ -1390,12 +1397,12 @@ body{
 .maintab{
     width: 100%;
     height: 200px;
-    border: 1px solid #707070;
+    border: 1px solid var(--color);
     border-collapse: collapse;
 }
 
 .tab{
-    color: #707070;
+    color: var(--color);
     width: 12.5%;
     height: 35px;
     font-size: 16px;
@@ -1437,7 +1444,6 @@ body{
 .tabA{
     width: 100%;
     height: 40px;
-    /* border-bottom: 1px solid #707070; */
 }
 
 table{
@@ -1460,12 +1466,12 @@ table{
 }
 
 .tabButton2{
-    color: #707070;
+    color: var(--color);
     font-size: 15px;
 }
 
 .tabBut1{
-    background-color: #008EA8;
+    background-color: var(--text-color);
     /* background-color: #ededed; */
     color: #fff;
     width: 80px;
@@ -1478,7 +1484,7 @@ table{
 }
 
 .tabBut2{
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     width: 65px;
     height: 100%;
@@ -1512,7 +1518,7 @@ table{
 }
 
 .whatsapp2{
-    color: #707070;
+    color: var(--color);
     font-size: 12px;
 }
 
@@ -1589,7 +1595,7 @@ table{
 }
 
 .naira{
-    color: #008EA8;
+    color: var(--text-color);
     font-size: 15px;
     font-weight: bold;
 }
@@ -1597,7 +1603,7 @@ table{
 .now{
     width: 85px;
     height: 35px;
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     padding: 10px;
     font-size: 13px;
@@ -1616,7 +1622,7 @@ table{
 
 .now2{
     text-decoration: none;
-    color: #008EA8;
+    color: var(--text-color);
     font-family: 10px;
     font-weight: bold;
 }
@@ -1627,7 +1633,7 @@ table{
     width: 120px;
     height: 40px;
     gap: 10px;
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     padding: 10px;
     font-size: 13px;
@@ -1645,7 +1651,7 @@ table{
     width: 120px;
     height: 40px;
     gap: 10px;
-    background-color: #008EA8;
+    background-color: var(--text-color);
     color: #fff;
     padding: 10px;
     font-size: 13px;
@@ -1709,7 +1715,7 @@ table{
 .icon22{
     width: 100%;
     height: 100%;
-    color: #008EA8;
+    color: var(--text-color);
     /* background-color: blue; */
 }
 
@@ -1790,7 +1796,7 @@ table{
 .icon13{
     width: 100%;
     height: 100%;
-    color: #008EA8;
+    color: var(--text-color);
 }
 
 /* Overview section*/
@@ -1828,8 +1834,8 @@ table{
 .wallet4{
     font-size: 15px;
     font-weight: bold;
-    color: #008EA8;
-    background-color: rgba(14, 28, 60, 0.05);
+    color: var(--text-color);
+    background-color: var(--bg);
     border-radius: 2px;
     padding: 20px;
     text-decoration: none;
@@ -1842,7 +1848,7 @@ table{
 
 .wallet5{
     text-decoration: none;
-    color: #008EA8;
+    color: var(--text-color);
 }
 
 .icon9{
@@ -1853,7 +1859,7 @@ table{
 .icon8{
     width: 100%;
     height: 100%;
-    color: #008EA8;
+    color: var(--text-color);
     /* stroke: #008EA8; */
     /* stroke-width: 10px; */
 }
@@ -1867,7 +1873,7 @@ table{
 .total{
     font-size: 13.5px;
     font-weight: bold;
-    color: #707070;
+    color: var(--color);
     margin-bottom: 10px;
 }
 
@@ -1915,7 +1921,7 @@ table{
     display: flex;
     gap: 15px;
     font-size: 13px;
-    color: #707070;
+    color: var(--color);
 }
 
 .newnum{
@@ -1925,7 +1931,7 @@ table{
 
 .newA{
     font-size: 13px;
-    color: #707070;
+    color: var(--color);
     margin-top: 10px;
     text-align: center;
 }
@@ -1943,7 +1949,6 @@ table{
     display: flex;
     gap: 20px;
     width: 100%;
-    /* padding: 0px 15px; */
 }
 
 .phone{
@@ -1977,7 +1982,7 @@ table{
 
 .get{
     font-size: 13px;
-    color: #707070;
+    color: var(--color);
     width: 300px;
 }
 
@@ -2056,12 +2061,12 @@ table{
 }
 
 .mail{
-    color: #008EA8;
+    color: var(--text-color);
     margin-top: 5px;
 }
 
 .mcol1{
-    background-color: #008EA8 !important;
+    background-color: var(--text-color) !important;
 }
 
 /*FAQs section*/
@@ -2437,12 +2442,6 @@ table{
         height: 420px;
     }
 
-    /* .spirit{
-        font-size: 20px;
-        font-weight: bold;
-
-    } */
-
     .bar{
         font-size: 35px;
         width: 40px;
@@ -2455,7 +2454,6 @@ table{
 
     .xmark{
         font-size: 35px;
-        /* padding: 5px; */
         color: #000;
     }
 
@@ -2473,7 +2471,6 @@ table{
         font-size: 14px;
     }
 
-
     .sup{
         font-size: 12px;
         font-weight: 500;
@@ -2489,8 +2486,6 @@ table{
     .referr{
         font-size: 18px;
         margin-top: 0px;
-        /* padding: 30px;
-        margin-top: -25px; */
     }
 
     .wallet{
@@ -2504,10 +2499,6 @@ table{
         margin-top: 10px;
     }
 
-    /* .wallet4{
-        height: 71px;
-    } */
-
     .tableD{
         margin-bottom: 30px;
     }
@@ -2519,12 +2510,10 @@ table{
     .view1{
         display: flex;
         margin-top: 30px;
-        /* padding: 20px; */
     }
 
     .quick{
         font-size: 18px;
-        /* padding-left: 15px; */
     }
 
     .phoneA{
@@ -2534,7 +2523,6 @@ table{
         margin: 0 auto;
         padding-bottom: 30px;
         width: 100%;
-        /* max-width: 700px; */
     }
 
     .phone1{
@@ -2548,7 +2536,6 @@ table{
 
     .table9{
         width: 100%;
-        /* max-width: 700px; */
         margin: 0 auto;
     }
 
@@ -2595,8 +2582,6 @@ table{
 
     .vir{
         gap: 35px;
-        /* padding: 30px;
-        margin-top: -30px; */
     }
 
     .vir input{
@@ -2638,7 +2623,6 @@ table{
         margin-top: 5px;
     }
 
-    
     .form2{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         border-radius: 5px;
@@ -2663,7 +2647,6 @@ table{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         border-radius: 5px;
         width: 100%;
-        /* max-width: 655px; */
         height: 600px;
         margin: 0 auto;
         margin-left: 22px;
@@ -2737,15 +2720,6 @@ table{
         /* overflow-x: hidden; */ 
     }
 
-    /* .tableview3{
-        overflow-y: scroll;
-        width: 100%;
-    }
-
-    .tableview4{
-        width: 100px;
-    } */
-
     .referral{
         /* display: flex; */
         flex-wrap: wrap;
@@ -2780,8 +2754,6 @@ table{
     .mainearn, .time1{
         padding: 0px 15px;
     }
-
-    
 
     .name1{
         font-size: 11px;
@@ -2865,7 +2837,6 @@ table{
 
     .referr{
         font-size: 18px;
-        /* margin-top: -35px; */
     }
 
     .table9{
@@ -2900,7 +2871,6 @@ table{
 
     .wallet1{
         width: calc(50% - 10px);
-        /* height: 125px; */
     }
 
     .wallet2{
@@ -2908,8 +2878,6 @@ table{
     }
 
     .wallet4{
-        /* height: 55px;
-        width: 141px; */
         margin-top: 0px;
         padding: 8px;
     }
@@ -3022,14 +2990,12 @@ table{
     .icon4 {
         width: 16px;
         height: 16px;
-        /* margin-left: -15px; */
     }
 
     .share1{
         width: 15px;
         height: 20px;
     }
-
 
     .virnum{
         font-size: 10px;
@@ -3069,7 +3035,6 @@ table{
         .table6, .table7, .table8{
             width: 100%;
             padding: 20px;
-            /* height: 80px; */
         }
 
         .phone{
@@ -3224,14 +3189,12 @@ table{
         }
     
         .time1{
-            /* justify-content: space-between; */
             padding: 0px 15px;
         }
 
         .alltime1{
             width: 132px;
         }
-        
 
     /*Help section*/
         .contact{
@@ -3356,11 +3319,6 @@ table{
         }
 
     /*Overview section*/
-        /* .wallet1{
-        width: 116px;
-        height: 115px;
-        } */
-
         .total{
             font-size: 9px;
         }
@@ -3516,7 +3474,7 @@ table{
             font-family: 12px;
         }
 
-/*Referral section*/
+    /*Referral section*/
         .refcode3{
             gap: 13px;
         }
@@ -3607,11 +3565,6 @@ table{
         .wallet{
             gap: 20px;
         }
-    
-        /* .wallet1{
-        width: 90px;
-        height: 117px;
-        } */
 
         .total{
         font-size: 7px;
@@ -3621,18 +3574,8 @@ table{
         font-size: 8px;
         }
 
-        /* .wallet4{
-        height: 41px;
-        width: 90px;
-        margin-top: -12px;
-        } */
-
         .wallet5{
             font-size: 8px;
-        }
-
-        .phone{
-            /* width: 275px; */
         }
 
         .over1{
@@ -3970,6 +3913,5 @@ table{
 
     .check input {
         width: 17px;
-    }
-        
+    }  
     }

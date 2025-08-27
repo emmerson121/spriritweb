@@ -31,13 +31,13 @@ const Cable = () =>{
 
             {dstvSubscription.map((app,id) =>(
                 <div className="thirdtable" key={id}>
-                    <div className="tranx">{app.subTransaction}</div>
-                    <div className="net">{app.subType}</div>
-                    <div className="title">{app.subName}</div>
-                    <div className="reach">{app.subAccount}</div>
-                    <div className="value">{app.subValue}</div>
-                    <div className="sit" style={{color: app.subStatus === 'Success' ? 'green' : app.subStatus === 'Pending' ? 'brown' : app.subStatus ==='Failed' ? 'red' : 'green'}}>{app.subStatus}</div>
-                    <div className="duration">{app.subDate}</div>
+                    <div className="datA">{app.subTransaction}</div>
+                    <div className="datA">{app.subType}</div>
+                    <div className="datA">{app.subName}</div>
+                    <div className="datA">{app.subAccount}</div>
+                    <div className="datA">{app.subValue}</div>
+                    <div className="datA" style={{color: app.subStatus === 'Success' ? 'green' : app.subStatus === 'Pending' ? 'brown' : app.subStatus ==='Failed' ? 'red' : 'green'}}>{app.subStatus}</div>
+                    <div className="datA">{app.subDate}</div>
                 </div>
                 ))}
             </div>

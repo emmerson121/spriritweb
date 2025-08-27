@@ -153,9 +153,10 @@ const AdminOverview = () =>{
                 ))}
             </div>
 
-            <div className="">
-              <div className="chartDetails">
-    <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+            <div>
+            <div className="scroll1">
+              <div className="scroll2">
+    <LineChart className="subChart" width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
     <CartesianGrid stroke="#aaa" strokeDasharray="5 5" />
     <Line type="monotone" dataKey="uv" stroke="purple" strokeWidth={2} name="My data series name" />
     <XAxis dataKey="name" />
@@ -163,6 +164,7 @@ const AdminOverview = () =>{
     <Legend align="right" />
     <Tooltip />
   </LineChart>
+              </div>
               </div>
 
               <div>

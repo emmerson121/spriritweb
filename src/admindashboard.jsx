@@ -15,6 +15,9 @@ import Support from './support';
 import Apierrors from './apiErrors';
 import Roles from './roles';
 import FreebiesMan from './freebiesManagement';
+import Electricity from './electricity';
+import Cracked from './cracked';
+import Movies from './movies';
 
 
 const Admin = () => {
@@ -80,9 +83,12 @@ const Admin = () => {
                         <ul className='trans1'>
                             <li className='subairtime' onClick={() => setOver(<Airtime />)}>Airtime and Data</li>
                             <li className='subairtime' onClick={() => setOver(<Cable />)}>Cable TV</li>
+                            <li className='subairtime' onClick={() => setOver(<Electricity />)}>Electricity</li>
+                            <li className='subairtime' >Foreign Numbers</li>
                             <li className='subairtime' onClick={() => setOver(<FreebiesMan />)}>Freebies</li>
-                            <li className='subairtime' onClick={() => setOver(<Plans />)}>Manage Data Plans</li>
                             <li className='subairtime' onClick={() => setOver(<Spy />)}>Spy Tools</li>
+                            <li className='subairtime' onClick={() => setOver(<Cracked />)} >Cracked Tools</li>
+                            <li className='subairtime' onClick={() => setOver(<Movies />)}>Movies</li>
                         </ul>
                     </div> 
                     : ''}
@@ -101,7 +107,7 @@ const Admin = () => {
                     <div className='trans2'>
                         <ul className='trans1'>
                             <li className='subairtime' >Airtime Providers</li>
-                            <li className='subairtime' >Data Plans</li>
+                            <li className='subairtime' onClick={() => setOver(<Plans />)}>Data Plans</li>
                             <li className='subairtime' >Cable Providers</li>
                             <li className='subairtime' >Electricity Providers</li>
                             <li className='subairtime' >Foreign Number APIs</li>
@@ -161,7 +167,7 @@ const Admin = () => {
                     {!logs ?
                     <div className='trans2'>
                         <ul className='trans1'>
-                            <li className='subairtime' onClick={() => setOver(<User />)}>Failed Payments</li>
+                            <li className='subairtime'>Failed Payments</li>
                             <li className='subairtime' onClick={() => setOver(<Apierrors />)}>Api Errors</li>
                             <li className='subairtime' onClick={() => setOver(<Susaccounts />)}>Suspicious Logins</li>
                         </ul>
@@ -185,7 +191,7 @@ const Admin = () => {
                     <div className='trans2'>
                         <ul className='trans1'>
                             <li className='subairtime' onClick={() => setOver(<Payment />)}>Payment Integrations</li>
-                            <li className='subairtime' onClick={() => setOver(<Susaccounts />)}>System Toggles</li>
+                            <li className='subairtime' >System Toggles</li>
                             <li className='subairtime' onClick={() => setOver(<Roles />)}>Admin Roles</li>
                         </ul>
                     </div> 
@@ -249,9 +255,12 @@ const Admin = () => {
                         <ul className='trans3'>
                             <li className='subairtime1' onClick={() => setOver(<Airtime />)}>Airtime and Data</li>
                             <li className='subairtime1' onClick={() => setOver(<Cable />)}>Cable TV</li>
-                            <li className='subairtime1' onClick={() => setOver(<Freebies />)}>Freebies</li>
-                            <li className='subairtime1' onClick={() => setOver(<Plans />)}>Manage Data Plans</li>
-                            <li className='subairtime1' onClick={() => setOver(<Spy />)}>Spy Tool Requests</li>
+                            <li className='subairtime1' onClick={() => setOver(<Electricity />)}>Electricity</li>
+                            <li className='subairtime1'>Foreign Numbers</li>
+                            <li className='subairtime1' onClick={() => setOver(<FreebiesMan />)}>Freebies</li>
+                            <li className='subairtime1' onClick={() => setOver(<Spy />)}>Spy Tools</li>
+                            <li className='subairtime1' onClick={() => setOver(<Cracked />)}>Cracked Tools</li>
+                            <li className='subairtime1' onClick={() => setOver(<Movies />)}>Movies</li>
                         </ul>
                     </div> 
                     : ''}
@@ -269,7 +278,7 @@ const Admin = () => {
                     <div className='trans4'>
                         <ul className='trans3'>
                             <li className='subairtime1' >Airtime Providers</li>
-                            <li className='subairtime1' >Data Plans</li>
+                            <li className='subairtime1' onClick={() => setOver(<Plans />)}>Data Plans</li>
                             <li className='subairtime1' >Cable Providers</li>
                             <li className='subairtime1' >Electricity Providers</li>
                             <li className='subairtime1' >Foreign Number APIs</li>
@@ -329,7 +338,7 @@ const Admin = () => {
                     {!logs ?
                     <div className='trans4'>
                         <ul className='trans3'>
-                            <li className='subairtime1' onClick={() => setOver(<User />)}>Failed Payments</li>
+                            <li className='subairtime1'>Failed Payments</li>
                             <li className='subairtime1' onClick={() => setOver(<Apierrors />)}>Api Errors</li>
                             <li className='subairtime1' onClick={() => setOver(<Susaccounts />)}>Suspicious Logins</li>
                         </ul>
@@ -353,7 +362,7 @@ const Admin = () => {
                     <div className='trans4'>
                         <ul className='trans3'>
                             <li className='subairtime1' onClick={() => setOver(<Payment />)}>Payment Integrations</li>
-                            <li className='subairtime1' onClick={() => setOver(<Susaccounts />)}>System Toggles</li>
+                            <li className='subairtime1'>System Toggles</li>
                             <li className='subairtime1' onClick={() => setOver(<Roles />)}>Admin Roles</li>
                         </ul>
                     </div> 

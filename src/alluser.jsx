@@ -11,7 +11,12 @@ const User = () =>{
     ]
 
     return(
-        <div className='allusers'>         
+        <div className='subscriptions'>   
+
+        <div className=''>
+            <div className='heading'>All Users</div>
+        </div>  
+
             <form action="" className='formdett'>
             <div className='tabbutton'>
                 

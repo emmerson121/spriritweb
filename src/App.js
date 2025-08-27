@@ -6,6 +6,7 @@ import Admin from './admindashboard';
 import Dashboard from './dashboard';
 import Overview from './overview';
 import Refer from './refer';
+import Cracked from './cracked';
 
 function App() {
 
@@ -39,8 +40,9 @@ function App() {
     <BrowserRouter> 
     <div className=''>
       <Dashboard />
-      <Refer />
+      {/* <Refer /> */}
       <Admin />
+      {/* <Cracked /> */}
       {/* <Page2 /> */}
       {/* {section} */}
     {/* {section === 'Overview' ? <Overview /> : section === "Virtual" ? <Virtual /> : section === 'Messages' ? <Messages /> : section === 'Referrals' ? <Referrals /> : section === 'Earnings' ? <Earnings /> : <Overview /> } */}

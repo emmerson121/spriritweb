@@ -10,7 +10,9 @@ const Apierrors = () =>{
 
     return(
         <div className="log">
-            <div className="heading"></div>
+            <div className="subtitle">
+            <div className="heading">API Errors Log</div>
+            </div>
 
             <div className="scroll1">
                 <div className="scroll2">
@@ -30,8 +32,8 @@ const Apierrors = () =>{
                             <div className="datA" style={{color: 'red'}}>{app.logMessage}</div>
                             <div className="datA">{app.logStatus}</div>
                             <div className="timestamp">
-                            <div className="">{app.logDate}</div>
-                            <div className="">{app.logTime}</div>
+                            <div className="size2">{app.logDate}</div>
+                            <div className="size2">{app.logTime}</div>
                             </div>
                         </div>
                         ))}

@@ -10,7 +10,9 @@ const FreebiesMan = () =>{
 
     return(
         <div className="log">
-            <div className="heading"></div>
+            <div className="subtitle">
+            <div className="heading">Freebies</div>
+            </div>
 
             <div className="scroll1">
                 <div className="scroll2">

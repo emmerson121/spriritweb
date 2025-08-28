@@ -847,7 +847,8 @@
 
 .butMenu{
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
+    gap: 10px;
 }
 
 .nextButton{

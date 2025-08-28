@@ -131,7 +131,7 @@
 .heading{
     font-size: 22px;
     font-weight: bold;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     /* padding-left: 15px; */
 }
 
@@ -358,7 +358,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 0px 20px 0px;
+    padding-bottom: 20px;
 }
 
 /* .freebiecard{
@@ -510,12 +510,27 @@
 
 .verify1{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     gap: 10px;
     width: 22%;
     text-align: left;
     /* width: 50px; */
     height: 25px;
+}
+
+.editimg{
+    width: 23px;
+    height: 23px;
+}
+
+.editinfo{
+    color: var(--p-color);
+    font-size: 15px;
+}
+
+.deleteinfo{
+    color: red;
+    font-size: 15px;
 }
 
 .verify2{
@@ -1019,6 +1034,12 @@
         font-size: 12px;
     }
 
+    /*Freebies management section*/
+    .editimg{
+        width: 16px;
+        /* height: 14px; */
+    }
+
     /*Admin roles section*/
     .roleDetails input{
         width: 300px;
@@ -1052,7 +1073,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        padding: 20px 15px;
+        padding: 20px 20px 20px 0px;
     }
 
     .mainlist{
@@ -1115,10 +1136,6 @@
         /* color: #008EA8; */
         /* fill: #008EA8; */
         cursor: pointer;
-    }
-
-    .heading{
-        margin-top: 20px;
     }
 
 
@@ -1283,6 +1300,30 @@
     .card{
         width: 100%;
     }
+
+    /*Freebies Management section*/
+    .heading{
+        font-size: 16px;
+    }
+    
+    .freebiecard1 {
+        width: 100px;
+        height: auto;
+        gap: 7px;
+    }
+
+    .plus{
+        font-size: 10px;
+    }
+    
+    .editinfo, .deleteinfo{
+        font-size: 12px;
+    }
+
+    .editimg{
+        /* width: 23px; */
+        /* height: 23px; */
+    }
     
     /*Support*/
     .incomingImg{
@@ -1383,6 +1424,14 @@
     .dashboard1{
         font-size: 12px;
     }
+
+    .dashtext1{
+        font-size: 12px;
+    }
+
+    .subairtime1{
+        font-size: 11px;
+    }
     
     .sendButton2{
         width: 80px;
@@ -1420,6 +1469,33 @@
     }
     
     .allAccess{
+        font-size: 12px;
+    }
+
+    .heading{
+        font-size: 13px;
+    }
+
+    /*Freebies management section*/
+    .freebiecard1 {
+        width: 80px;
+    }
+    
+    .addbutton{
+        width: 24px;
+        height: 24px;
+    }
+
+    .addlogo {
+        width: 9px;
+        height: 11px;
+    }
+
+    .plus{
+        text-align: center;
+    }
+
+    .size1{
         font-size: 12px;
     }
 

@@ -1149,13 +1149,6 @@ body{
     align-items: center;
 }
 
-.virtual1{
-    /* background-color: orangered; */
-    /* color: #fff; */
-    /* height: 60px; */
-    /* padding: 12px; */
-}
-
 .virtual4{
     display: flex;
     align-items: center;
@@ -1444,10 +1437,6 @@ body{
 .tabA{
     width: 100%;
     height: 40px;
-}
-
-table{
-    /* border-collapse: collapse; */
 }
 
 .tabButton{
@@ -2155,10 +2144,6 @@ table{
     width: 25%;
 }
 
-.referr{
-    /* padding-left: 15px; */
-}
-
 .line1, .line2, .line3{
     width: 256px;
 }
@@ -2196,14 +2181,6 @@ table{
 
 .wallet5{
     font-size: 11px;
-}
-
-.table9{
-    /* width: 660px; */
-}
-
-.phone{
-    /* width: 310px; */
 }
 
 .get{
@@ -2320,10 +2297,6 @@ table{
 
 .mainmessage{
     width: 75%;
-}
-
-.table6, .table7, .table8{
-    /* width: 650px; */
 }
 
 /*Referral section*/
@@ -2443,7 +2416,7 @@ table{
     }
 
     .bar{
-        font-size: 35px;
+        font-size: 30px;
         width: 40px;
         height: 100%;
     }
@@ -2453,7 +2426,7 @@ table{
     }
 
     .xmark{
-        font-size: 35px;
+        font-size: 25px;
         color: #000;
     }
 
@@ -2799,10 +2772,6 @@ table{
         margin-bottom: 30px;
     }
 
-    .flex{
-        /* margin-bottom: 10px; */
-    }
-
     .faq1{
         font-size: 17px;
     }
@@ -2829,10 +2798,6 @@ table{
     /*Overview section*/
     .sprit{
         font-size: 18px;
-    }
-
-    .xmark{
-        font-size: 30px;
     }
 
     .referr{
@@ -3310,8 +3275,12 @@ table{
         }
 
         .bar{
-            font-size: 30px;
+            font-size: 25px;
             width: 35px;
+        }
+
+        .xmark{
+            font-size: 20px;                                                                                           
         }
 
         .referr{
@@ -3799,11 +3768,6 @@ table{
 
         .earns{
             font-size: 16px;
-        }
-
-
-        .formControl{
-            /* padding: 20px; */
         }
 
         .form{

@@ -1,5 +1,6 @@
 import React from "react";
 import './admin.css';
+import Page from "./Pagination/page";
 
 const Plans = () =>{
     const dataPlan = [
@@ -53,6 +54,8 @@ const Plans = () =>{
                     </div>
                     </div>
                     </div>
+
+                    <Page />
                 </div>
     )
 }

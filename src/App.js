@@ -4,9 +4,6 @@ import './App.css';
 // import Vendor from './vendor';
 import Admin from './admindashboard';
 import Dashboard from './dashboard';
-import Overview from './overview';
-import Refer from './refer';
-import Cracked from './cracked';
 
 function App() {
 
@@ -42,8 +39,7 @@ function App() {
       <Dashboard />
       {/* <Refer /> */}
       <Admin />
-      {/* <Cracked /> */}
-      {/* <Page2 /> */}
+      {/* <ManageMovie /> */}
       {/* {section} */}
     {/* {section === 'Overview' ? <Overview /> : section === "Virtual" ? <Virtual /> : section === 'Messages' ? <Messages /> : section === 'Referrals' ? <Referrals /> : section === 'Earnings' ? <Earnings /> : <Overview /> } */}
     </div>
@@ -57,6 +53,7 @@ function App() {
     {/* <Business /> */}
     {/* <Vendor /> */}
     <Routes>
+      
       {/* <Route path='/internationalpage' element={<Page2 />} /> */}
       {/* <Route path='/info' element={<Info />} /> */}
     </Routes>

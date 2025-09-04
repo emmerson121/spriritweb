@@ -18,6 +18,12 @@ import FreebiesMan from './freebiesManagement';
 import Electricity from './electricity';
 import Cracked from './cracked';
 import Movies from './movies';
+import AirtimeProv from './airtimeprov';
+import Cableprov from './cableprov';
+import ManageMovie from './moviesMan';
+import Upload from './upload';
+import Adminelect from './adminElect';
+import ForeignNumbers from './foreignNum';
 
 
 const Admin = () => {
@@ -106,11 +112,11 @@ const Admin = () => {
                     {!service ?
                     <div className='trans2'>
                         <ul className='trans1'>
-                            <li className='subairtime' >Airtime Providers</li>
+                            <li className='subairtime' onClick={() => setOver(<AirtimeProv  />)}>Airtime Providers</li>
                             <li className='subairtime' onClick={() => setOver(<Plans />)}>Data Plans</li>
-                            <li className='subairtime' >Cable Providers</li>
-                            <li className='subairtime' >Electricity Providers</li>
-                            <li className='subairtime' >Foreign Number APIs</li>
+                            <li className='subairtime' onClick={() => setOver(<Cableprov />)}>Cable Providers</li>
+                            <li className='subairtime' onClick={() => setOver(<Adminelect />)}>Electricity Providers</li>
+                            <li className='subairtime' onClick={() => setOver(<ForeignNumbers />)}>Foreign Number APIs</li>
                         </ul>
                     </div> 
                     : ''}
@@ -128,8 +134,8 @@ const Admin = () => {
                     {!content ?
                     <div className='trans2'>
                         <ul className='trans1'>
-                            <li className='subairtime' >Add/Remove Movies</li>
-                            <li className='subairtime' >Upload Cracked Tools</li>
+                            <li className='subairtime' onClick={() => setOver(<ManageMovie />)}>Add/Remove Movies</li>
+                            <li className='subairtime' onClick={() => setOver(<Upload />)}>Upload Cracked Tools</li>
                             <li className='subairtime' onClick={() => setOver(<Freebies />)}>Manage Freebies</li>
                         </ul>
                     </div> 
@@ -277,11 +283,11 @@ const Admin = () => {
                     {!service ?
                     <div className='trans4'>
                         <ul className='trans3'>
-                            <li className='subairtime1' >Airtime Providers</li>
+                            <li className='subairtime1' onClick={() => setOver(<AirtimeProv />)}>Airtime Providers</li>
                             <li className='subairtime1' onClick={() => setOver(<Plans />)}>Data Plans</li>
-                            <li className='subairtime1' >Cable Providers</li>
-                            <li className='subairtime1' >Electricity Providers</li>
-                            <li className='subairtime1' >Foreign Number APIs</li>
+                            <li className='subairtime1' onClick={() => setOver(<Cableprov />)}>Cable Providers</li>
+                            <li className='subairtime1' onClick={() => setOver(<Adminelect />)}>Electricity Providers</li>
+                            <li className='subairtime1' onClick={() => setOver(<ForeignNumbers />)}>Foreign Number APIs</li>
                         </ul>
                     </div> 
                     : ''}
@@ -299,8 +305,8 @@ const Admin = () => {
                     {!content ?
                     <div className='trans4'>
                         <ul className='trans3'>
-                            <li className='subairtime1' >Add/Remove Movies</li>
-                            <li className='subairtime1' >Upload Cracked Tools</li>
+                            <li className='subairtime1' onClick={() => setOver(<ManageMovie />)}>Add/Remove Movies</li>
+                            <li className='subairtime1' onClick={() => setOver(<Upload />)}>Upload Cracked Tools</li>
                             <li className='subairtime1' onClick={() => setOver(<Freebies />)}>Manage Freebies</li>
                         </ul>
                     </div> 

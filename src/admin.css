@@ -178,12 +178,8 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    padding: 20px 20px 20px 0px;
+    padding: 0px 0px 20px 0px;
     
-}
-
-.formdett{
-    width: 100%;
 }
 
 .formdet input{
@@ -346,7 +342,6 @@
 .subscriptions{
     width: 75%;
     padding: 0px 15px;
-    /* margin-top: 20px; */
     margin-bottom: 20px;
 }
 
@@ -493,7 +488,7 @@
 .datA{
     width: 20%;
     text-align: left;
-    /* font-size: 14px; */
+    /* font-size: 13px; */
 }
 
 .paidlogo{
@@ -533,9 +528,6 @@
     font-size: 15px;
 }
 
-.verify2{
-    /* font-size: 14px; */
-}
 
 .sit{
     color: green;
@@ -827,7 +819,7 @@
     align-items: center;
     gap: 10px;
     width: 100%;
-    /* padding: 0px 15px; */
+     padding: 0px 0px 20px 0px;
     
 }
 
@@ -860,56 +852,508 @@
     margin: 0 auto;
 }
 
-.butMenu{
-    display: flex;
-    justify-content: left;
-    gap: 10px;
+  /*Service management section*/
+    .serviceSearch{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .serviceSearch1{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .inputdet input{
+        width: 550px;
+        background-color: #fff;
+        color: #000;
+        padding: 0px 8px;
+        border: 1px solid #e3e2e2;
+        border-radius: 10px;
+        /* box-shadow: 0 2px 5px #ddcece4d; */
+        border-bottom: 1px solid #c3bbbbe0;
+        font-size: 14px;
+        line-height: 45px;
+        box-sizing: content-box;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .inputdet2 input{
+        width: 550px;
+        background-color: #fff;
+        color: #000;
+        padding: 0px 8px;
+        border: 1px solid #e3e2e2;
+        border-radius: 10px;
+        /* box-shadow: 0 2px 5px #ddcece4d; */
+        border-bottom: 1px solid #c3bbbbe0;
+        font-size: 14px;
+        line-height: 45px;
+        /* box-sizing: content-box; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .allBut{
+        background-color: var(--p-color);
+        color: #fff;
+        width: 75px;
+        height: 100%;
+        /* line-height: 45px; */
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid #9b9494b5;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .slide1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .slideNetwork{
+        font-size: 15px;
+    }
+
+    .networklogo{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin-bottom: 30px;
+    }
+
+    .myMtn{
+        width: 100%;
+        height: 100%;
+    }    
+
+    .myMtn1{
+        width: 23px;
+        height: auto;
+    }
+
+    .myMtn2{
+        width: 40px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .networktype{
+        font-size: 18px;
+        font-weight: bold;
+        /* margin-bottom: 5px; */
+    }
+
+    .networkStatus{
+        font-size: 14px;
+    }
+
+    .buyprice{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .networkval input{
+        width: 80px;
+        height: auto;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        font-size: 15px;
+        
+    }
+
+    .networkBut{
+        background-color: red;
+        color: #fff;
+        width: 75px;
+        height: 100%;
+        /* line-height: 45px; */
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid #9b9494b5;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    /*Cable TV Provider section*/
+    .cableHolder{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        /* background-color: #fff; */
+        border: 1px solid rgba(14, 28, 60, 0.05);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 30px;
 }
 
-.nextButton{
-    background-color: var(--text-color);
-    /* background-color: #ededed; */
+    .maingotv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .gotv{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .gotv1{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .gotv2{
+        width: 60px;
+        height: auto;
+        background-color: #bae774;
+        color: #033803;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .cabledetails{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .jollDetails{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .joll1{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .joll2{
+        font-size: 15px;
+        color: #707070;
+    }
+
+    .nairaControl{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nairaSign{
+        font-size: 18px;
+        color: #707070;
+    }
+
+    .nairaInput input{
+        width: 80px;
+        height: auto;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        font-size: 15px; 
+    }
+
+    .cableBut{
+    background-color: red;
     color: #fff;
-    width: 80px;
+    width: 75px;
     height: 100%;
+    /* line-height: 45px; */
     padding: 10px;
     text-align: center;
-    font-size: 14px;
-    border: 1px solid #9b9494b5;
-    border-radius: 5px;
-}
-
-.buttonContainer{
-    display: flex;
-    gap: 10px;
-}
-
-.selectbutton{
-    list-style: none;
-    width: 40px;
-    height: auto;
-    background-color: #fff;
-    border: none;
-    padding: 10px;
     font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-.prevButton{
-    background-color: var(--text-color);
-    color: #fff;
-    width: 65px;
-    height: 100%;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
     border: 1px solid #9b9494b5;
     border-radius: 5px;
 }
 
-.navbar1{
+    .planText{
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .planContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .planContainer2{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .planDetail input{
+        width: 760px;
+        height: auto;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        font-size: 15px; 
+    } 
+    
+    .planDetail2 input{
+        width: 100px;
+        height: auto;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        font-size: 15px;   
+    }
+
+    .planBut{
+        background-color: var(--p-color);
+        color: #fff;
+        width: 50px;
+        height: 100%;
+        /* line-height: 45px; */
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid #9b9494b5;
+        border-radius: 10px;
+    }
+
+    .movieUpload{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /*Elctricity Provider Management*/
+    .electdisplay{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .electCharge{
+        width: 23px;
+        height: 20px;
+    }
+    
+    .electopt{
+        background-color: #e3e3e3b5;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 5px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .electopt1{
+        background-color: #fff;
+        width: 45px;
+        height: 35px;
+        text-align: center;
+        font-size: 15px;
+        border: none;
+        padding: 9px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .electopt2{
+        font-size: 15px;
+        /* background-color: #fff;
+        width: 60px;
+        height: 35px;
+        text-align: center;
+        border: none;
+        padding: 9px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+    }
+
+    .electopt3{
+        font-size: 15px;
+        /* background-color: #fff;
+        width: 70px;
+        height: 35px;
+        text-align: center;
+        border: none;
+        padding: 9px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px; */
+    }
+
+    .ikContainer{
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        /* background-color: #fff; */
+        border: 1px solid rgba(14, 28, 60, 0.05);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .ikedcshow{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .ikName{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .toggleon{
+        width: 40px;
+        height: 20px;
+    }
+
+    .ikedcInput{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .ikedcInput input{
+        width: 90px;
+        height: auto;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .mainhash{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .ikhash{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .ikhash2{
+        color: #707070;
+        font-size: 15px;
+    }
+
+    .ikUpdate{
+        background-color: var(--p-color);
+        color: #fff;
+        width: 450px;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    /*Foreign Numbers Management*/
+    .foreignrefresh{
+        background-color: var(--p-color);
+        color: #fff;
+        width: 90px;
+        height: 100%;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .datA1{
+        width: 20%;
+        text-align: left;
+        font-size: 13px;
+}
+
+    .foreignEdit{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .foreignEdit1{
+        font-size: 13px;
+    }
+
+    .size2{
+        font-size: 12px;
+        width: 20%;
+        text-align: end;
+    }  
+    
+    .foreignStatus1{
+        width: 75px;
+        height: auto;
+        background-color: #bae774;
+        color: #033803;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .foreignStatus2{
+        width: 75px;
+        height: auto;
+        background-color: #ffc8c8;
+        color: red;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .foreignAction{
+        background-color: red;
+        color: #fff;
+        width: 80px;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+        border: 1px solid #9b9494b5;
+        border-radius: 5px
+    }
+
+    .navbar1{
     position: fixed;
     width: 100%;
     top: 0;
@@ -918,6 +1362,7 @@
     bottom: 0;
     background-color: #0e0b0bba;
   }
+
 
   .nav1{
     /* padding: 20px; */
@@ -959,6 +1404,8 @@
     .mainproduct{
         margin-top: 70px;
     }
+
+    .nextB
 
     /*All users section*/
     .heading{
@@ -1034,6 +1481,45 @@
         font-size: 12px;
     }
 
+    /*Cable Provider section*/
+    .planDetail input{
+        width: 520px;
+    }  
+    
+    .planContainer2{
+        gap: 15px;
+    }
+
+    /*Electricity Provider section*/
+    .inputdet2 input{
+        width: 445px;
+    }   
+
+    /*Foreign Number APIs*/
+    .foreignEdit{
+        gap: 5px;
+    }
+    
+    .foreignStatus2{
+        width: 65px;
+        font-size: 12px;
+    } 
+
+    .foreignStatus1{
+        width: 60px;
+        font-size: 12px;
+    } 
+
+    .foreignAction{
+        width: 55px;
+        font-size: 8px;
+        padding: 9px;
+    }
+
+    .foreignEdit1{
+        font-size: 12px;
+    }
+
     /*Freebies management section*/
     .editimg{
         width: 16px;
@@ -1055,6 +1541,7 @@
 @media(max-width: 768px){
     .subscriptions{
         width: 100%;
+        
     }
 
     .overallContainer{
@@ -1178,6 +1665,58 @@
         height: 13px;
     }
 
+    /*Airtime Provider section*/
+    .slide1{
+        gap: 15px;
+    }
+
+    .myMtn2{
+        width: 30px;
+    }
+
+    .slideNetwork{
+        font-size: 13px;
+    }
+
+    .networktype{
+        font-size: 15px;
+    }
+
+    .networkStatus{
+        font-size: 12px;
+    }
+
+    .buyprice {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .networkval input {
+        width: 55px;
+        font-size: 11px;
+    }
+
+    .networkBut {
+        width: 65px;
+        font-size: 13px;
+    }
+
+    /*Cable Provider section*/
+    .planDetail input {
+        width: 470px;
+    }
+
+    .planContainer2{
+        gap: 20px;
+    }
+
+    /*Electricity Provider section*/
+    .serviceSearch1{
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+
     /*API Log*/
     .log{
         width: 100%;
@@ -1239,6 +1778,14 @@
 }
 
 @media(max-width: 425px){
+    .subscriptions{
+        padding: 0px;
+    }
+
+    .dashtext1{
+        font-size: 12px;
+    }
+    
     .scroll2{
         width: 660px;
     }
@@ -1318,11 +1865,6 @@
     
     .editinfo, .deleteinfo{
         font-size: 12px;
-    }
-
-    .editimg{
-        /* width: 23px; */
-        /* height: 23px; */
     }
     
     /*Support*/
@@ -1418,15 +1960,139 @@
         font-size: 12px;
     }
 
+    /*Airtime Providers section*/
+    .serviceSearch{
+        justify-content: space-between;
+    }
+    
+    .inputdet input{
+        width: 100%;
+        font-size: 12px;
+        height: auto;
+    }
+
+    .allBut{
+        font-size: 12px;
+    }
+
+    /*Cable Provider section*/
+    .cableHolder{
+        margin-top: 0px;
+    }
+    
+    .gotv1 {
+        font-size: 18px;
+    }
+
+    .gotv2{
+        width: 50px;
+        font-size: 11px;
+    }
+
+    .cableBut{
+        width: 60px;
+        font-size: 12px;
+    }
+
+    .joll1{
+        font-size: 15px;
+    }
+
+    .joll2{
+        font-size: 12px;
+    }
+
+    .nairaSign{
+        font-size: 15px;
+    }
+
+    .nairaInput input{
+        width: 65px;
+        font-size: 12px;
+    }
+
+    .planText{
+        font-size: 15px;
+    }
+
+    .planContainer{
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .planContainer2{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .planDetail input {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .planDetail2 input {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .planBut{
+        width: 45px;
+        padding: 9px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    /*Electricity Provider section*/
+    .serviceSearch1{
+        flex-direction: column;
+        align-items: normal;
+        gap: 10px;
+    }
+
+    .inputdet2{
+        width: 100%;
+    }
+
+    .inputdet2 input {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .ikContainer{
+        margin-top: 20px;
+    }
+
+    .ikedcInput input{
+        width: 75px;
+    }
+
+    .electopt{
+        width: 230px;
+    }
+
+    .toggleon {
+        width: 31px;
+        height: 31px;
+    }
+
+    .ikName{
+        font-size: 18px;
+    }
+
+    .ikUpdate{
+        width: 100%;
+    }
+
 }
 
 @media(max-width: 375px){
     .dashboard1{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .dashtext1{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .subairtime1{
@@ -1437,6 +2103,90 @@
         width: 80px;
         height: 25px;
         font-size: 11px;
+    }
+
+    /*Airtime Provider*/
+    .networktype{
+        font-size: 13px;
+    }
+
+    .networkStatus{
+        font-size: 10px;
+    }
+
+    .buyprice{
+        font-size: 11px;
+    }
+
+    .networkval input {
+        width: 50px;
+        font-size: 10px;
+    }
+
+    .networkBut {
+        width: 55px;
+        font-size: 11px;
+    }
+
+    /*Cable Provider section*/
+    .gotv1{
+        font-size: 15px;
+    }
+
+    .gotv2{
+        font-size: 10px;
+        width: 45px;
+    }
+
+    .joll1{
+        font-size: 13px;
+    }
+
+    .joll2{
+        font-size: 10px;
+    }
+
+    .planText{
+        font-size: 13px;
+    }
+
+    .planDetail input{
+        font-size: 10px;
+    }
+
+    .planDetail2 input{
+        font-size: 10px;
+    }
+
+    /*Electricity Provider section*/
+    .ikName{
+        font-size: 15px;
+    }
+    
+    .ikedcInput input{
+        width: 60px;
+        font-size: 12px;
+    }
+
+    .ikhash{
+        font-size: 15px;
+    }
+
+    .ikhash2{
+        font-size: 12px;
+    }
+
+    .ikUpdate {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .electopt1{
+        font-size: 12px;
+    }
+
+    .electopt2, .electopt3{
+        font-size: 12px;
     }
 
     /*Suspicious accounts*/
@@ -1474,6 +2224,34 @@
 
     .heading{
         font-size: 13px;
+    }
+
+    /*Airtime Providers section*/
+    .subscriptions{
+        padding: 0px;
+    }
+
+    .slideNetwork {
+        font-size: 11px;
+    }
+
+    .myMtn1{
+        width: 17px;
+    }
+    
+    .networktype {
+        font-size: 12px;
+    }
+
+    /*Cable Provider section*/
+    .cableBut {
+        width: 55px;
+        font-size: 11px;
+    }
+    
+    .nairaInput input {
+        width: 50px;
+        font-size: 10px;
     }
 
     /*Freebies management section*/

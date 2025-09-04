@@ -1,0 +1,86 @@
+:root{
+    --text-color: #008EA8;
+}
+
+.butMenu{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.nextButton{
+    background-color: var(--text-color);
+    /* background-color: #ededed; */
+    color: #fff;
+    width: 80px;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #9b9494b5;
+    border-radius: 5px;
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.selectbutton{
+    list-style: none;
+    width: 40px;
+    height: auto;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.prevButton{
+    background-color: var(--text-color);
+    color: #fff;
+    width: 65px;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #9b9494b5;
+    border-radius: 5px;
+}
+
+@media(max-width: 1024px){
+    .nextButton{
+        width: 70px;
+        font-size: 13px;
+    }
+
+    .prevButton{
+        width: 50px;
+        font-size: 13px;
+    }
+
+    .selectbutton{
+        width: 35px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 768px){
+    .nextButton{
+        width: 65px;
+        font-size: 11px;
+    }
+
+    .prevButton{
+        width: 45px;
+        font-size: 11px;
+    }
+
+    .selectbutton{
+        width: 35px;
+        font-size: 11px;
+    }
+}

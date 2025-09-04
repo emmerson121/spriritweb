@@ -18,17 +18,17 @@ const Electricity = () =>{
         </div>  
 
         <div className="electSearch">
-                <form action="" className='formdett'>
-            <div className='tabbutton'>
                 
+            <div className='tabbutton'>
+                <form action="" className=''>
                 <div className='formDetail'>
                     <input type='text' placeholder='Search users...' />
                 </div>
-            
+              </form>
                 <div className='tabBut'>Search</div>
                 
             </div >
-            </form>
+          
 
             <div className="electSelect">
             <select name="text" id="" className="selectopt">

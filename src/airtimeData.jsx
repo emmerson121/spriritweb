@@ -1,5 +1,6 @@
 import React from "react";
 import './admin.css';
+import Page from "./Pagination/page";
 
 const Airtime = () =>{
 
@@ -47,7 +48,8 @@ const Airtime = () =>{
                 </div>
             </div>
 
-            <div className="butMenu">
+            <Page />
+            {/* <div className="butMenu">
                 <button className="nextButton">Previous</button>
                 <ul className="buttonContainer">
                     <li className="selectbutton">1</li>
@@ -59,7 +61,7 @@ const Airtime = () =>{
                     <li className="selectbutton">7</li>
                 </ul>
                 <button className="prevButton">Next</button>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -43,39 +43,6 @@ const Electricity = () =>{
                 <option value="">Status1</option>
             </select>
             </div>
-
-            {/* <div className="electSearch1">
-                    <div className="alltime1">
-                        <div className="alltime">
-                            <div>Provider</div>
-                            <div className="icon19">
-                              {elect ? <svg className="col2" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg> : <svg className="col2" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>}  
-                            </div>
-
-                            {!elect ?
-                    <div className='trans2'>
-                        <ul className='trans1'>
-                            <li className='subairtime'>Provider1</li>
-                            <li className='subairtime'>Provider2</li>
-                        </ul>
-                    </div> 
-                    : ''}
-                        </div>
-
-                    </div>
-
-                    <div className="alltime1">
-                        <div className="alltime">
-                            <div>Status</div>
-                            <div className="icon19"><svg className="" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></div>
-                        </div>
-
-                        
-                    </div>
-                    
-                        
-                </div> */}
-
             
             </div>
 

@@ -2,41 +2,15 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 // import Vendor from './vendor';
-import Admin from './admindashboard';
+import Admin from './adDashboard';
 import Dashboard from './dashboard';
 
 function App() {
 
-
-// const myFunc = (p) =>{
-//   setSection(p)
-    // if(p === 'Overview'){
-    //   setSection(<Overview />)
-    // }
-    // else if(p === 'Virtual'){
-    //   setSection(<Virtual />)
-    // }
-    // else if(p === 'Messages'){
-    //   setSection(<Messages />)
-    // }
-    // else if(p === 'Referrals'){
-    //   setSection(<Referrals />)
-    // }
-    // else if(p === 'Earnings'){
-    //   setSection(<Earnings />)
-    // }
-    // else{
-    //   setSection(<Overview />)
-    // }
-    
-
-
-// }
-
   return (
     <BrowserRouter> 
     <div className=''>
-      <Dashboard />
+      {/* <Dashboard /> */}
       {/* <Refer /> */}
       <Admin />
       {/* <ManageMovie /> */}

@@ -17,10 +17,12 @@ const Messages = () =>{
                     <div className="mess">SMS Messages</div>
                     </div>
 
-                    <div className=""><a className="messageIcon1" href="">
+                    <div className="">
+                        <a className="messageIcon1" href="">
                         <div className="icon16"><FontAwesomeIcon className="icon2" icon={faArrowsRotate} /></div>
                         <div className="refresh">Refresh</div>
-                        </a></div>
+                        </a>
+                    </div>
                 </div>
 
                 <div className='tableC'>

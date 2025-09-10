@@ -24,6 +24,7 @@ import ManageMovie from './moviesMan';
 import Upload from './upload';
 import Adminelect from './adminElect';
 import ForeignNumbers from './foreignNum';
+import Foreign from './foreign';
 
 
 const Admin = () => {
@@ -76,6 +77,10 @@ const Admin = () => {
 
                 </li>
 
+                <li className='list5 mcol2' onClick={() => setOver(<AdminOverview />)}>
+                    <div className='dashtext'>Affiliate</div>
+                </li>
+
                 <li className='mcol2'>
                     <div className='list5 mainlink' onClick={() => setTrans(!trans)}>
                     <div className='dashtext'>Transactions</div>
@@ -90,7 +95,7 @@ const Admin = () => {
                             <li className='subairtime' onClick={() => setOver(<Airtime />)}>Airtime and Data</li>
                             <li className='subairtime' onClick={() => setOver(<Cable />)}>Cable TV</li>
                             <li className='subairtime' onClick={() => setOver(<Electricity />)}>Electricity</li>
-                            <li className='subairtime' >Foreign Numbers</li>
+                            <li className='subairtime' onClick={() => setOver(<Foreign />)}>Foreign Numbers</li>
                             <li className='subairtime' onClick={() => setOver(<FreebiesMan />)}>Freebies</li>
                             <li className='subairtime' onClick={() => setOver(<Spy />)}>Spy Tools</li>
                             <li className='subairtime' onClick={() => setOver(<Cracked />)} >Cracked Tools</li>
@@ -248,6 +253,10 @@ const Admin = () => {
 
                 </li>
 
+            <li className='navlist mcol2' onClick={() => setOver( <AdminOverview />)}>
+            <div className='dashtext1'>Affiliate</div>
+            </li>
+
             <li className='navlist mcol2'>
                     <div className='navlink' onClick={() => setTrans(!trans)}>
                     <div className='dashtext1'>Transactions</div>
@@ -262,7 +271,7 @@ const Admin = () => {
                             <li className='subairtime1' onClick={() => setOver(<Airtime />)}>Airtime and Data</li>
                             <li className='subairtime1' onClick={() => setOver(<Cable />)}>Cable TV</li>
                             <li className='subairtime1' onClick={() => setOver(<Electricity />)}>Electricity</li>
-                            <li className='subairtime1'>Foreign Numbers</li>
+                            <li className='subairtime1' onClick={() => setOver(<Foreign />)}>Foreign Numbers</li>
                             <li className='subairtime1' onClick={() => setOver(<FreebiesMan />)}>Freebies</li>
                             <li className='subairtime1' onClick={() => setOver(<Spy />)}>Spy Tools</li>
                             <li className='subairtime1' onClick={() => setOver(<Cracked />)}>Cracked Tools</li>

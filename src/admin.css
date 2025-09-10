@@ -496,6 +496,7 @@
     align-items: center;
     width: 20%;
     text-align: left;
+    gap: 5px;
 }
 
 .tranx, .proD, .net, .title, .reach, .value, .sit, .sit1, .sit2, .duration{
@@ -1281,6 +1282,308 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
+    /*Foreign Numbers*/
+    .foreignIcon{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 110px;
+        height: 35px;
+        background-color: #fff;
+        color: #000;
+        border: 0.1px solid var(--color);
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .foreicon16{
+        width: 16px;
+        height: 16px;
+    }
+
+    .foreicon2{
+        width: 100%;
+        height: 100%;
+        color: #000;
+    }
+
+    .forerefresh{
+        font-size: 13px;
+    }
+
+    .foreview{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .foreHolder{
+        width: calc(50% - 20px);
+        height: auto;
+        padding: 20px;
+        border: 1px solid rgba(14, 28, 60, 0.05);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .forerefA{
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .foreref1{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .foredisplay{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foreicon4{
+        width: 20px;
+        height: 22px;
+    }
+
+    .foreicon5{
+        width: 30px;
+        height: 22px;
+    }
+
+    .foreicon6{
+        width: 22px;
+        height: 22px;
+    }
+
+    .foreSection{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        /* background-color: #fff; */
+        border: 1px solid rgba(14, 28, 60, 0.05);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+}
+
+    .todayView{
+        display: flex;
+        gap: 10px;
+    }
+
+    .todayCover{
+        background-color: var(--p-color);
+        color: #fff;
+        font-size: 15px;
+        width: 80px;
+        height: 100%;
+        text-align: center;
+        border: none;
+        border-radius: 30px;
+        padding: 9px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .todayCover1{
+        background-color: #fff;
+        color: #000;
+        font-size: 15px;
+        width: 115px;
+        height: 100%;
+        text-align: center;
+        border: none;
+        border-radius: 30px;
+        padding: 9px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .todayCover2{
+        background-color: #fff;
+        color: #000;
+        font-size: 15px;
+        width: 120px;
+        height: 100%;
+        text-align: center;
+        border: none;
+        border-radius: 30px;
+        padding: 9px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .todayCover3{
+        background-color: #fff;
+        color: #000;
+        font-size: 15px;
+        width: 60px;
+        height: 100%;
+        text-align: center;
+        border: none;
+        border-radius: 30px;
+        padding: 9px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .searchContainer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .search-container {
+        position: relative;
+        display: flex;
+        gap: 10px;
+    }
+
+    .search-container input{
+        width: 825px;
+        height: 45px;
+        font-size: 15px;
+       padding: 10px 10px 10px 40px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .search-icon {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    .search-container1 input{
+        width: 150px;
+        height: 100%;
+        font-size: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .foreOptions1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .foreOptions{
+        width: calc(50% - 20px);
+        height: 45px;
+        font-size: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .foreOptions2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .foreignNum{
+        width: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 40px;
+        margin-top: 20px;   
+    }
+
+    .foreOptions3{
+        width: 100%;
+    }
+
+    .foreOptions3 input{
+        width: 100%;
+        height: 45px;
+        font-size: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .foreOptions4{
+        width: 100%;
+    }
+
+    .foreOptions4 input{
+        width: 100%;
+        height: 45px;
+        font-size: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .foreTo{
+        font-size: 15px;
+    }
+
+    .forereset{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    .foreReset{
+        width: 100%;
+        height: 45px;
+        background-color: #fff;
+        color: #000;
+        padding: 13px;
+        font-size: 15px;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .foreApply{
+        width: 100%;
+        height: 45px;
+        background-color: var(--p-color);
+        color: #fff;
+        padding: 13px;
+        font-size: 15px;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .status2{
+        font-size: 15px;
+    }
+
+    .loadingImg1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .loadingImg{
+        width: 25px;
+        height: 25px;
+    }
+
+    
     /*Foreign Numbers Management*/
     .foreignrefresh{
         background-color: var(--p-color);
@@ -1299,7 +1602,33 @@
         width: 20%;
         text-align: left;
         font-size: 13px;
-}
+    }
+
+    .dat5{
+        width: 20%;
+        text-align: left;
+        /* font-size: 13px; */
+    }
+
+    .forecountry{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 20%;
+        text-align: left;
+    }
+
+    .forecircle{
+        width: 42px;
+        height: 100%;
+        background-color: #d9d9d9;
+        color: #000;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
 
     .foreignEdit{
         display: flex;
@@ -1313,8 +1642,8 @@
 
     .size2{
         font-size: 12px;
-        width: 20%;
-        text-align: end;
+        /* width: 20%; */
+        /* text-align: end; */
     }  
     
     .foreignStatus1{
@@ -1351,6 +1680,25 @@
         font-size: 12px;
         border: 1px solid #9b9494b5;
         border-radius: 5px
+    }
+
+    .symbolShow{
+        display: flex;
+        align-items: center;
+         width: 20%;
+        text-align: left;
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .foreimage{
+        width: 100%;
+        height: 100%;
+    }
+
+    .foreimage1{
+        width: 25px;
+        height: 25px;
     }
 
     .navbar1{
@@ -1479,6 +1827,30 @@
 
     .datA{
         font-size: 12px;
+    }
+
+    /*Foreign Numbers section*/
+    .foreref1{
+        font-size: 22px;
+    }
+
+    .forerefA{
+        font-size: 14px;
+    }
+
+    .foreicon5{
+        width: 25px;
+        height: 20px;
+    }
+
+    .forecircle{
+        width: 36px;
+        font-size: 12px;
+    }
+    
+    .search-container input {
+        width: 500px;
+        font-size: 13px;
     }
 
     /*Cable Provider section*/
@@ -1644,6 +2016,47 @@
         font-size: 12px;
     }
 
+    /*Foreign Numbers section*/
+    .forescroll1{
+        width: 100%;
+        overflow-x: scroll;
+        margin-bottom: 70px;
+    }
+
+    .forescroll2{
+        width: 720px;
+        padding: 0px 0px 15px;
+    }
+    
+    .foreOptions{
+        font-size: 13px;
+    }
+
+    .search-container input{
+        width: 480px;
+    }
+
+    .search-container1 input {
+        font-size: 13px;
+    }
+
+    .foreOptions3 input{
+        font-size: 13px;
+    }
+
+    .foreOptions4 input{
+        font-size: 13px;
+    }
+
+    .forecountry{
+        gap: 7px;
+    }
+
+    .loadingImg {
+        width: 22px;
+        height: 22px;
+}
+
     /*Freebie Management*/
     .freebiecard1{
         width: 120px;
@@ -1786,8 +2199,8 @@
         font-size: 12px;
     }
     
-    .scroll2{
-        width: 660px;
+    .forescroll2{
+        width: 750px;
     }
 
     .thirdtable{
@@ -1835,6 +2248,64 @@
 
     .selectopt{
         width: 100%;
+    }
+
+    /*Foreign Numbers section*/
+    .forerefA {
+        font-size: 13px;
+    }
+    
+    .searchContainer{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container input{
+        width: 100%;
+        height: auto;
+    }
+
+    .search-container1 input{
+        width: 100%;
+    }
+
+    .search-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .todayCover{
+        font-size: 13px;
+        width: 70px;
+    }
+
+    .todayCover1{
+        font-size: 13px;
+        width: 95px;
+    }
+
+    .todayCover2{
+        font-size: 13px;
+        width: 100px;
+    }
+
+    .todayCover3{
+        font-size: 13px;
+        width: 50px;
+        border-radius: 20px;
+    }
+
+    .foreApply, .foreReset{
+        height: 100%;
+    }
+
+    .foreimage1 {
+        width: 20px;
+        height: 20px;
+    }
+
+    .status2{
+        font-size: 12px;
     }
     
     /*Suspicious accounts*/
@@ -2128,6 +2599,54 @@
         font-size: 11px;
     }
 
+    /*Foreign Numbers section*/
+    .forerefA{
+        font-size: 12px;
+    }
+
+    .foreref1 {
+        font-size: 20px;
+    }
+    
+    .search-container input {
+        font-size: 11px;
+    }
+
+    .search-container1 input {
+        font-size: 11px;
+    }
+
+    .todayCover{
+        font-size: 12px;
+        width: 60px;
+        border-radius: 20px;
+    }
+
+    .todayCover1{
+        font-size: 12px;
+        width: 85px;
+        border-radius: 20px;
+    }
+
+    .todayCover2{
+        font-size: 12px;
+        width: 90px;
+        border-radius: 20px;
+    }
+
+    .todayCover3{
+        font-size: 12px;
+        width: 45px;
+        border-radius: 15px;
+    }
+
+    .foreOptions3 input {
+        font-size: 12px;
+    }
+
+    .foreOptions4 input {
+        font-size: 12px;
+    }
     /*Cable Provider section*/
     .gotv1{
         font-size: 15px;
@@ -2225,6 +2744,51 @@
     .heading{
         font-size: 13px;
     }
+
+    /*Foreign Numbers section*/
+    .foreSection{
+        padding: 10px;
+    }
+
+    .foreref1 {
+        font-size: 18px;
+    }
+
+    .foreicon4{
+        width: 16px;
+        height: 12px;
+    }
+
+    .foreicon5{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .search-container input {
+        font-size: 10px;
+    }
+
+    .search-container1 input {
+        font-size: 10px;
+    }
+
+    .todayCover, .todayCover1, .todayCover2, .todayCover3{
+        font-size: 11px;
+    }
+
+    .foreOptions{
+        font-size: 12px;
+    }
+
+    .foreTo{
+        font-size: 13px;
+    }
+
+    .forecircle {
+        width: 33px;
+        font-size: 10px;
+    }
+    
 
     /*Airtime Providers section*/
     .subscriptions{

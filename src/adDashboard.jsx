@@ -25,6 +25,8 @@ import Upload from './upload';
 import Adminelect from './adminElect';
 import ForeignNumbers from './foreignNum';
 import Foreign from './foreign';
+import FailedPayments from './failedPayments';
+import SystemToggle from './systemToggles';
 
 
 const Admin = () => {
@@ -178,7 +180,7 @@ const Admin = () => {
                     {!logs ?
                     <div className='trans2'>
                         <ul className='trans1'>
-                            <li className='subairtime'>Failed Payments</li>
+                            <li className='subairtime' onClick={() => setOver(<FailedPayments />)}>Failed Payments</li>
                             <li className='subairtime' onClick={() => setOver(<Apierrors />)}>Api Errors</li>
                             <li className='subairtime' onClick={() => setOver(<Susaccounts />)}>Suspicious Logins</li>
                         </ul>
@@ -202,7 +204,7 @@ const Admin = () => {
                     <div className='trans2'>
                         <ul className='trans1'>
                             <li className='subairtime' onClick={() => setOver(<Payment />)}>Payment Integrations</li>
-                            <li className='subairtime' >System Toggles</li>
+                            <li className='subairtime' onClick={() => setOver(<SystemToggle />)}>System Toggles</li>
                             <li className='subairtime' onClick={() => setOver(<Roles />)}>Admin Roles</li>
                         </ul>
                     </div> 
@@ -353,7 +355,7 @@ const Admin = () => {
                     {!logs ?
                     <div className='trans4'>
                         <ul className='trans3'>
-                            <li className='subairtime1'>Failed Payments</li>
+                            <li className='subairtime1' onClick={() => setOver(<FailedPayments />)}>Failed Payments</li>
                             <li className='subairtime1' onClick={() => setOver(<Apierrors />)}>Api Errors</li>
                             <li className='subairtime1' onClick={() => setOver(<Susaccounts />)}>Suspicious Logins</li>
                         </ul>
@@ -377,7 +379,7 @@ const Admin = () => {
                     <div className='trans4'>
                         <ul className='trans3'>
                             <li className='subairtime1' onClick={() => setOver(<Payment />)}>Payment Integrations</li>
-                            <li className='subairtime1'>System Toggles</li>
+                            <li className='subairtime1' onClick={() => setOver(<SystemToggle />)}>System Toggles</li>
                             <li className='subairtime1' onClick={() => setOver(<Roles />)}>Admin Roles</li>
                         </ul>
                     </div> 
@@ -392,7 +394,6 @@ const Admin = () => {
         </div>
         </div> 
         : ''}
-    
         </div> 
     );
 }

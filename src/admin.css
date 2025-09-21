@@ -1,5 +1,6 @@
 :root{
     --p-color: #008EA8;
+    --toggle: #0B2C2F;
 }
 
 .overallContainer{
@@ -223,7 +224,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    width: 940px;
+    width: 100%;
     /* padding: 20px; */
 }
 
@@ -1701,6 +1702,131 @@
         height: 25px;
     }
 
+    /*Failed Payments*/
+    .failedCard{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        /* padding: 20px; */
+    }
+
+    .fullcard{
+        width: calc(50% - 20px);
+        /* height: 160px; */
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px #ddcece4d;
+    }
+
+    .fullname{
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0px 12px;
+        padding-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .mailAddress{
+        font-size: 14px;
+        padding-left: 12px;
+        margin-bottom: 15px;
+    }
+
+    .payStatus{
+        font-size: 15px;
+        font-weight: bold;
+        color: red;
+        padding-left: 12px;
+    }
+
+
+    .roller{
+        padding: 0px 12px;
+    }
+
+    .confirm{
+        padding: 13px;
+    }
+
+    .paymentBox1{
+        background-color: var(--p-color);
+        color: #fff;
+        width: 70px;
+        height: 38px;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 15px;
+        text-align: center;
+        /* font-weight: bold; */
+    }
+
+    .paymentBox2{
+        background-color: var(--p-color);
+        color: #fff;
+        width: 60px;
+        height: 38px;
+        border: 1px solid #f2f2f2;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 15px; 
+        text-align: center;
+        /* font-weight: bold; */
+    }
+
+    /*System Toggle section*/
+    .totaltoggle{
+        width: 100%;
+    }
+    
+    .togglehead{
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+    
+    .toggleContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .toggleInfo{
+        font-size: 15px;
+        text-align: left;
+        
+    }
+
+    .maintoggle{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .toggle1{
+        display: flex;
+        align-items: center;
+        fill: var(--toggle);
+        gap: 10px;
+    }
+
+    .toggle2{
+        display: flex;
+        align-items: center;
+        fill: var(--toggle);
+        gap: 10px;
+    }
+    
+    .toggleimg{
+        width: 35px;
+        height: 35px;
+    }
+
+    .toggletext{
+        font-size: 15px;
+    }
+
     .navbar1{
     position: fixed;
     width: 100%;
@@ -1896,6 +2022,24 @@
     .editimg{
         width: 16px;
         /* height: 14px; */
+    }
+
+    /*System Toggles section*/
+    .togglehead{
+        font-size: 14px;
+    }
+
+    .toggleInfo{
+        font-size: 12px;
+    }
+    
+    .toggleimg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .toggletext{
+        font-size: 12px;
     }
 
     /*Admin roles section*/
@@ -2383,7 +2527,23 @@
     .reply{
         font-size: 13px;
     }
+
+    /*System Toggle section*/
+    .togglehead {
+        font-size: 10px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .toggleInfo {
+        font-size: 9px;
+        width: 50%;
+    }
     
+    .toggletext {
+        font-size: 8px;
+    }
+
     /*Admin roles section*/
     .roleContainer{
         margin-top: 20px;
@@ -2555,6 +2715,41 @@
         width: 100%;
     }
 
+    /*Failed Payment section*/
+    .failedCard{
+        flex-direction: column;
+    }
+    
+    .fullcard{
+        width: 100%;
+    }
+
+    .fullname{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .mailAddress{
+        font-size: 13px;
+    }
+
+    .payStatus{
+        font-size: 13px;
+    }
+
+    .paymentBox1{
+        width: 65px;
+        height: auto;
+        font-size: 13px;
+    }
+
+    .paymentBox2{
+        width: 55px;
+        height: auto;
+        font-size: 13px;
+    }
+
+
 }
 
 @media(max-width: 375px){
@@ -2567,7 +2762,7 @@
     }
 
     .subairtime1{
-        font-size: 11px;
+        font-size: 10px;
     }
     
     .sendButton2{
@@ -2721,6 +2916,21 @@
         font-size: 11px;
     }
 
+    /*System Toggle section*/
+    .maintoggle{
+        gap: 25px;
+    }
+    
+    .toggleInfo{
+        width: 45%;
+        font-size: 7px;
+    }
+    
+    .toggleimg {
+        width: 25px;
+        height: 25px;
+    }
+
     /*Admin section*/
     .addDetail{
         width: 70px;
@@ -2869,5 +3079,15 @@
     
     .reply{
         font-size: 11px;
+    }
+
+    /*System Toggles section*/
+    .toggleimg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .toggletext{
+        font-size: 7px;
     }
 }

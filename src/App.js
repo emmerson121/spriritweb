@@ -4,13 +4,15 @@ import './App.css';
 // import Vendor from './vendor';
 import Admin from './adDashboard';
 import Dashboard from './dashboard';
+import OverviewText from './overviewtext';
 
 function App() {
 
   return (
     <BrowserRouter> 
     <div className=''>
-      {/* <Dashboard /> */}
+      <Dashboard />
+      <OverviewText />
       {/* <Refer /> */}
       <Admin />
       {/* <ManageMovie /> */}

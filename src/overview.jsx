@@ -195,6 +195,8 @@ const [section, setSection] = useState('Overview');
                     <div className='get'>Share your referral code and earn commissions on their purchases.</div>
                 </div>
             </div>
+
+            
             </div>
     )
 }
